@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="punann">
+<head>
+    <meta charset="utf-8">
+    <!-- Load angular in head as functionality is dependent on it -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/controllers/menu.js"></script>
+    <script src="js/directives/menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div ng-controller="NameController as nameCtrl">
+        <span class="fade" id="currentName" ng-if="!fade">{{ nameCtrl.currentSurname }}</span>
+        <span class="fade" id="nextName" ng-if="fade">{{ nameCtrl.nextSurname }}</span>
+    </div>
+    <div ng-controller="MenuController as menuCtrl">
+        <top-menu items="menuCtrl.menuItems"></top-menu>
+    </div>
+</body>
+</html>
