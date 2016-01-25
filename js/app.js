@@ -1,6 +1,6 @@
 (function() {
-    angular.module('punann', ['ngAnimate', 'ui.router'])
-        .config(['$logProvider', '$stateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $urlRouterProvider) {
+    angular.module('punann', ['ngAnimate', 'ui.router', 'pascalprecht.translate'])
+        .config(['$logProvider', '$stateProvider', '$translateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $translateProvider, $urlRouterProvider) {
             $logProvider.debugEnabled(true);
 
             $urlRouterProvider.otherwise('/home');
@@ -26,9 +26,17 @@
                     views: {
                         '': { templateUrl: 'templates/partial-education.html' },
 
-                        'formal@about': { template: 'aaaahl' },
+                        'formal@education': {
+                            templateUrl: 'templates/partial-education-formal.html',
+                            controller: 'EducationController',
+                            controllerAs: 'eduCtrl'
+                        },
 
-                        'informal@about': { template: 'Look! I am a column!' }
+                        'informal@education': {
+                            templateUrl: 'templates/partial-education-informal.html',
+                            controller: 'EducationController',
+                            controllerAs: 'eduCtrl'
+                        }
                     }
                 });
         }]);

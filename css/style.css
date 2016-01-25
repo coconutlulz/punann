@@ -8,46 +8,38 @@
     border: 1px solid blue;
     width: 50%;
     clear: both;
+    text-align: center;
 }
 
 .navitem {
-    position: relative;
+    position: static;
     border-spacing: 10px;
     padding: 10px;
     text-align: center;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .name {
     position: relative;
     display: inline-block;
-    left: 45.225%;
-    width: 9.55%;
+    margin: 10px 0px 0px 43%;
+    width: 10%;
 }
 
 #firstName {
-    position: absolute;
-    left: 0%;
+    position: relative;
     z-index: 1;
-    text-align: right;
+    text-align: left;
 }
 
 .fade {
     position: absolute;
-    right: 0%;
+    width: 100px;
+    left: 100px;
     top: 0px;
     z-index: 2;
-    text-align: left;
-}
-
-.languageSelector {
-    border: 0px solid #555555;
-}
-
-.mainContent {
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px 15px 15px 15px;
-    border: 1px dashed #555555;
+    text-align: right;
 }
 
 .fade.ng-enter {
@@ -72,3 +64,30 @@
     opacity: 0;
 }
 
+.mainContent {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    border: 1px dashed #555555;
+}
+
+.education {
+    display: table;
+}
+
+.education ul
+{
+    list-style-type: none;
+}
+
+#formalEducation {
+    text-align: left;
+    display: table-cell;
+    width: 40%;
+}
+
+#informalEducation {
+    text-align: right;
+    display: table-cell;
+    width: 30%;
+}

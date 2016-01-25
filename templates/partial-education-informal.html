@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="qualification in eduCtrl.informal">
+        <h3>{{ qualification.title }}</h3>
+        <p id="eduInstitution">{{ qualification.institution }}</p>
+        <p id="eduDateRange">{{ qualification.startDate }} - {{ qualification.endDate }}</p>
+        <p id="eduGrade">{{ qualification.grade }}
+            <span id="eduGradeDescription">{{ qualification.gradeDescription }}</span>
+        </p>
+    </li>
+</ul>

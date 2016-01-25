@@ -1,0 +1,10 @@
+<ul> 
+    <li ng-repeat="qualification in eduCtrl.formal">
+        <h3><a href="{{ qualification.link }}">{{ qualification.title }}</h3></a>
+        <p id="eduInstitution">{{ qualification.institution }}</p>
+        <p id="eduDateRange">{{ qualification.startDate }} - {{ qualification.endDate }}</p>
+        <p id="eduGrade">{{ qualification.grade }}
+            <span id="eduGradeDescription">{{ qualification.gradeDescription }}</span>
+        </p>
+    </li>
+</ul>

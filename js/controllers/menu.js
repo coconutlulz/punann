@@ -43,46 +43,39 @@
             };
         })
         .service('menuService', function() {
-            this.languages = ['english', 'irish'];
-            this.currentLanguage = 0;
+            this.menu = [
+                {
+                    label: 'Synopsis',
+                    link: '.synopsis',
+                },
+                {
+                    label: 'Interests',
+                    link: '.interests',
+                },
+                {
+                    label: 'Experience',
+                    link: '.experience',
+                },
+                {
+                    label: 'Education',
+                    link: '.education',
+                },
+            ];
 
-            this.menu = {};
-            this.menu.english = [
-                'Synopsis',
-                'Interests',
-                'Experience',
-                'Education'];
-
-            this.menu.irish = [
-                 'Aċoimre',
-                 'Caiṫeaṁ Aimsire',
-                 'Taiṫí',
-                 'Oideaċas'];
-
-            this.menu.links = [
-                '.synopsis',
-                '.interests',
-                '.experience',
-                '.education'];
-            
             var service = this;
-
-            this.getCurrentLanguage = function() {
-                return service.languages[service.currentLanguage];
+            this.getMenu = function() {
+                return service.menu;
+            };
+        })
+        .service('educationService', function() {
+            var service = this;
+            this.getFormalEducation = function() {
+                return service.formalEducation;
             };
 
-            this.getMenuLabelsForCurrentLanguage = function() {
-                return service.menu[service.getCurrentLanguage()];
+            this.getInformalEducation = function() {
+                return service.informalEducation;
             };
-
-            this.getMenuLinks = function() {
-                return service.menu.links;
-            };
-
-            this.setCurrentLanguage = function(index) {
-                service.currentLanguage = index;
-            };
-
         })
         .controller('NameController', ['$interval', 'nameService', function($interval, nameService) {
             this.firstName = nameService.getFirstName();
@@ -103,31 +96,12 @@
             $interval(fadeNextName, 5000);
         }])
         .controller('MenuController', ['menuService', function(menuService) {
-            this.currentMenu = [];
-            var controller = this;
+            this.currentMenu = menuService.getMenu();
+        }])
+        .controller('EducationController', ['educationService', function(educationService) {
+            this.formal = educationService.getFormalEducation();
+            this.informal = educationService.getInformalEducation();
 
-            var rebuildMenu = function() {
-                var newMenu = [];
-                var labels = menuService.getMenuLabelsForCurrentLanguage();
-                var links = menuService.getMenuLinks();
-
-                for(var i = 0; i < labels.length; i++) {
-                    var newItem = {};
-                    newItem.label = labels[i];
-                    newItem.link = links[i];
-                    newMenu[i] = newItem;
-                }
-
-                controller.currentMenu = newMenu;
-            }
-
-            rebuildMenu();
-
-            var changeLanguage = function(index) {
-                if(menuService.getCurrentLanguage != index) {
-                    menuService.setCurrentLanguage(index);
-                    controller.rebuildMenu();
-                }
-            }
+            console.log(this.formal);
         }])
 })();
