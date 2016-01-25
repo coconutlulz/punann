@@ -67,16 +67,6 @@
                 return service.menu;
             };
         })
-        .service('educationService', function() {
-            var service = this;
-            this.getFormalEducation = function() {
-                return service.formalEducation;
-            };
-
-            this.getInformalEducation = function() {
-                return service.informalEducation;
-            };
-        })
         .controller('NameController', ['$interval', 'nameService', function($interval, nameService) {
             this.firstName = nameService.getFirstName();
 
@@ -98,10 +88,47 @@
         .controller('MenuController', ['menuService', function(menuService) {
             this.currentMenu = menuService.getMenu();
         }])
-        .controller('EducationController', ['educationService', function(educationService) {
-            this.formal = educationService.getFormalEducation();
-            this.informal = educationService.getInformalEducation();
+        .controller('EducationController', ['$translate', function($translate) {
+            var controller = this;
+            $translate(['FORMALEDUCATION.DCU.INSTITUTION',
+                    'FORMALEDUCATION.DCU.TITLE',
+                    'FORMALEDUCATION.DCU.DATERANGE',
+                    'FORMALEDUCATION.DCU.GRADEDESCRIPTION',
+                    'FORMALEDUCATION.DCU.NOTES',
+                    'FORMALEDUCATION.OU.INSTITUTION',
+                    'FORMALEDUCATION.OU.TITLE',
+                    'FORMALEDUCATION.OU.DATERANGE',
+                    'FORMALEDUCATION.OU.GRADE',
+                    'FORMALEDUCATION.OU.GRADEDESCRIPTION',
+                    'FORMALEDUCATION.OU.NOTES',
+                    'INFORMALEDUCATION.CNAG.INSTITUTION',
+                    'INFORMALEDUCATION.CNAG.TITLE1',
+                    'INFORMALEDUCATION.CNAG.TITLE2',
+                    'INFORMALEDUCATION.CNAG.TITLE3',
+                    'INFORMALEDUCATION.CNAG.DATERANGE1',
+                    'INFORMALEDUCATION.CNAG.DATERANGE2',
+                    'INFORMALEDUCATION.CNAG.DATERANGE3',
+                    'INFORMALEDUCATION.CNAG.NOTES']).then(function(translations) {
 
-            console.log(this.formal);
+                console.log(translations);
+                controller.formal = [
+                    {
+                        institution: translations['FORMALEDUCATION.DCU.INSTITUTION'],
+                        title: translations['FORMALEDUCATION.DCU.TITLE'],
+                        link: 'http://www.computing.dcu.ie/undergraduate/ca/bsc-computer-applications-dc121',
+                        dateRange: translations['FORMALEDUCATION.DCU.DATERANGE'],
+                        grade: '2.1',
+                        gradeDescription: translations['FORMALEDUCATION.DCU.GRADEDESCRIPTION']
+                    },
+                    {
+                        institution: translations['FORMALEDUCATION.OU.INSTITUTION'],
+                        title: translations['FORMALEDUCATION.OU.TITLE'],
+                        link: 'http://www.open.ac.uk/courses/qualifications/q64',
+                        dateRange: translations['FORMALEDUCATION.OU.DATERANGE'],
+                        grade: translations['FORMALEDUCATION.OU.GRADE'],
+                        gradeDescription: translations['FORMALEDUCATION.OU.GRADEDESCRIPTION']
+                    }
+                ];
+            })
         }])
 })();
