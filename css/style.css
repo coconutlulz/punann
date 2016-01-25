@@ -1,12 +1,52 @@
+#header {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .navbar {
-    display: table-cell;
+    margin: 20px auto;
     border: 1px solid blue;
+    width: 50%;
+    clear: both;
 }
 
 .navitem {
-    display: table;
-    table-layout: fixed;
     border-spacing: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    left: 45.225%;
+    width: 9.55%;
+}
+
+#firstName {
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    text-align: right;
+}
+
+.fade {
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    z-index: 2;
+    text-align: left;
+}
+
+.languageSelector {
+    border: 0px solid #555555;
+}
+
+#mainContent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    border: 1px dashed #555555;
 }
 
 .fade.ng-enter {
@@ -23,6 +63,11 @@
     opacity: 1;
 }
 
+.fade.ng-hide {
+    opacity: 0;
+}
+
 .fade.ng-leave.ng-leave-active {
     opacity: 0;
 }
+

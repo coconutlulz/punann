@@ -5,18 +5,25 @@
     <!-- Load angular in head as functionality is dependent on it -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/controllers/menu.js"></script>
     <script src="js/directives/menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div ng-controller="NameController as nameCtrl">
-        <span class="fade" id="currentName" ng-if="!fade">{{ nameCtrl.currentSurname }}</span>
-        <span class="fade" id="nextName" ng-if="fade">{{ nameCtrl.nextSurname }}</span>
+    <div id="header">
+        <div class="name" ng-controller="NameController as nameCtrl">
+            <div id="firstName">{{ nameCtrl.firstName }}</div>
+            <div class="fade" ng-if="nameCtrl.fade">{{ nameCtrl.currentSurname }}</div>
+            <div class="fade" ng-if="!nameCtrl.fade">{{ nameCtrl.currentSurname }}</div>
+        </div>
+        <div ng-controller="MenuController as menuCtrl">
+            <top-menu items="menuCtrl.menuItems[menuCtrl.languages[menuCtrl.currentLanguage]]"></top-menu>
+        </div>
     </div>
-    <div ng-controller="MenuController as menuCtrl">
-        <top-menu items="menuCtrl.menuItems"></top-menu>
+    <div id="mainContent" ng-controller="MainController as mainCtrl">
+        Tagann an oíċe - seo tosú m'ḟaire. Ní ṫosaífear í sula dtiocfaiḋ bás ċugam. Ní ḃeiṫ bean ċéile, nó tailte, nó clann agam. Ní ḃainfiḋ mé coróin nó iomrá amaċ. Saol agus bás trí ḋualgas. Is mise an claíoṁ sa dorċas. Is mise an garda ar na ballaí. Is mise scaiṫ an ċine ḋaonna mé. Is le Tráṫ Faire na hÓiċe mo ċlú 's mo ṡaol - ar feaḋ na hoíċe seo agus gaċ oíċe eile roṁam.
     </div>
 </body>
 </html>

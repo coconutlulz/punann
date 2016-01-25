@@ -4,7 +4,7 @@
             var index = 0;
             var surnames = [
                 'Lynam',
-                'Ó Laıġeanáın',
+                'Ó Laıġeanáın'
             ];
 
             this.firstName = 'David';
@@ -14,24 +14,31 @@
             var controller = this;
 
             function fadeNextName() {
-                controller.fade = true;
+                controller.fade = !controller.fade;
 
                 index = (index + 1) % surnames.length;
 
                 controller.currentSurname = surnames[index];
                 controller.nextSurname = surnames[(index + 1) % surnames.length];
-
-                controller.fade = false;
             }
 
-            $interval(fadeNextName, 3000);
+            $interval(fadeNextName, 5000);
         }])
         .controller('MenuController', function() {
-            this.menuItems = [
-                "Synopsis",
-                "Interests",
-                "Experience",
-                "Education"
-            ];
+            this.languages = ['english', 'irish'];
+            this.currentLanguage = 0;
+
+            this.menuItems = {}
+            this.menuItems.english = [
+                'Synopsis',
+                'Interests',
+                'Experience',
+                'Education'];
+            this.menuItems.irish = [
+                 'Aċoimre',
+                 'Caiṫeaṁ Aimsire',
+                 'Taiṫí',
+                 'Oideaċas'];
+            
         })
 })();
