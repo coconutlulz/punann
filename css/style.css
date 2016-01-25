@@ -11,6 +11,7 @@
 }
 
 .navitem {
+    position: relative;
     border-spacing: 10px;
     padding: 10px;
     text-align: center;
@@ -42,7 +43,7 @@
     border: 0px solid #555555;
 }
 
-#mainContent {
+.mainContent {
     width: 90%;
     margin: 0 auto;
     padding: 15px 15px 15px 15px;
