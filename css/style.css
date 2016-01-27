@@ -87,8 +87,30 @@
 }
 
 #informalEducation {
-    text-align: right;
+    text-align: left;
     display: table-cell;
-    width: 30%;
+    width: 40%;
+    padding-right: 30px;
+}
+
+.experience {
+    display: table;
+}
+
+.experience ul
+{
+    list-style-type: none;
+}
+
+#professionalExperience {
+    text-align: left;
+    display: table-cell;
+    width: 40%;
+}
+
+#voluntaryExperience {
+    text-align: left;
+    display: table-cell;
+    width: 40%;
     padding-right: 30px;
 }
