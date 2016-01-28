@@ -2,6 +2,13 @@
     angular.module('punann', ['ngAnimate', 'ui.router', 'pascalprecht.translate'])
         .config(['$logProvider', '$stateProvider', '$translateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $translateProvider, $urlRouterProvider) {
             var english = {
+                MENU:
+                {
+                    SYNOPSIS: 'Synopsis',
+                    INTERESTS: 'Interests',
+                    EXPERIENCE: 'Experience',
+                    EDUCATION: 'Education'
+                },
                 SYNOPSIS:
                 {
                     P1: 'My name is David and I am a person from Dublin, Ireland. From time to time I have been known as a software engineer. Thanks for taking the time to read my site.',
@@ -175,6 +182,13 @@
             };
 
             var irish = {
+                MENU:
+                {
+                    SYNOPSIS: 'Achoimre',
+                    INTERESTS: 'Suimeanna agus Caitheamh Aimsire',
+                    EXPERIENCE: 'Taithí',
+                    EDUCATION: 'Oideachas'
+                },
                 SYNOPSIS:
                 {
                     P1: 'Is mise David agus is as Áth Cliath dom.',

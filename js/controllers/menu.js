@@ -42,31 +42,6 @@
                 this.fade = !this.fade;
             };
         })
-        .service('menuService', function() {
-            this.menu = [
-                {
-                    label: 'Synopsis',
-                    link: '.synopsis',
-                },
-                {
-                    label: 'Interests',
-                    link: '.interests',
-                },
-                {
-                    label: 'Experience',
-                    link: '.experience',
-                },
-                {
-                    label: 'Education',
-                    link: '.education',
-                },
-            ];
-
-            var service = this;
-            this.getMenu = function() {
-                return service.menu;
-            };
-        })
         .controller('NameController', ['$interval', 'nameService', function($interval, nameService) {
             this.firstName = nameService.getFirstName();
 
@@ -85,8 +60,32 @@
 
             $interval(fadeNextName, 5000);
         }])
-        .controller('MenuController', ['menuService', function(menuService) {
-            this.currentMenu = menuService.getMenu();
+        .controller('MenuController', ['$translate', function($translate) {
+            var controller = this;
+            $translate(['MENU.SYNOPSIS',
+                    'MENU.INTERESTS',
+                    'MENU.EXPERIENCE',
+                    'MENU.EDUCATION'
+            ]).then(function(translations) {
+                controller.menu = [
+                    {
+                        label: translations['MENU.SYNOPSIS'],
+                        link: '.synopsis'
+                    },
+                    {
+                        label: translations['MENU.INTERESTS'],
+                        link: '.interests'
+                    },
+                    {
+                        label: translations['MENU.EXPERIENCE'],
+                        link: '.experience'
+                    },
+                    {
+                        label: translations['MENU.EDUCATION'],
+                        link: '.education'
+                    }
+                ];
+            });
         }])
         .controller('SynopsisController', ['$translate', function($translate) {
             var controller = this;
