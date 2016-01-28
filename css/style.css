@@ -71,6 +71,28 @@
     border: 1px dashed #555555;
 }
 
+.synopsis {
+    display: table;
+}
+
+.skillAbilities ul
+{
+    list-style-type: none;
+}
+
+#formalEducation {
+    text-align: left;
+    display: table-cell;
+    width: 40%;
+}
+
+#informalEducation {
+    text-align: left;
+    display: table-cell;
+    width: 40%;
+    padding-right: 30px;
+}
+
 .education {
     display: table;
 }
