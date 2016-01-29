@@ -477,10 +477,10 @@
             $translateProvider
                 .translations('en', english)
                 .translations('ga', irish)
-                .useSanitizeValueStrategy('sanitize')
+                .useSanitizeValueStrategy('sanitizeParameters')
                 .usePostCompiling(true)
                 //.determinePreferredLanguage();
-                .preferredLanguage('en');
+                .preferredLanguage('ga');
 
             $logProvider.debugEnabled(true);
 
