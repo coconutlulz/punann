@@ -172,8 +172,8 @@
                             DATERANGE: 'September 2015 to present',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Lollypop music player',
-                                DESCRIPTION2: 'VLC media player'
+                                DESCRIPTION1: '<a href="https://www.transifex.com/gnumdk/lollypop/">Lollypop</a> music player',
+                                DESCRIPTION2: '<a href="https://www.transifex.com/yaron/vlc-trans/">VLC media player</a>'
                             }
                         },
                         FS:
@@ -183,7 +183,7 @@
                             DATERANGE: 'October 2015 to present',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Clementine music player'
+                                DESCRIPTION1: '<a href="https://github.com/clementine-player">Clementine music player</a>'
                             }
                         }
                     }
@@ -409,8 +409,8 @@
                             DATERANGE: 'September 2015 to present',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Seinnteoir ceoil Lollypop',
-                                DESCRIPTION2: 'Seinnteoir na meáin VLC'
+                                DESCRIPTION1: 'Seinnteoir ceoil <a href="https://www.transifex.com/gnumdk/lollypop/">Lollypop</a>',
+                                DESCRIPTION2: 'Seinnteoir na meáin <a href="https://www.transifex.com/yaron/vlc-trans/">VLC</a>'
                             }
                         },
                         FS:
@@ -420,7 +420,7 @@
                             DATERANGE: 'Deireadh Fómhair 2015 go láithreach',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Seinnteoir ceoil Clementine'
+                                DESCRIPTION1: 'Seinnteoir ceoil <a href="https://github.com/clementine-player">Clementine</a>'
                             }
                         }
                     }
