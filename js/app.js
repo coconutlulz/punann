@@ -316,7 +316,7 @@
                     SCIENCE:
                     {
                         HEADING: 'Eolaíocht',
-                        TEXT: 'Tá suim ollmhór agam san eolaíocht - sa cheimic orgánach agus sa chógaseolaíocht go háirithe. Mar gheall ar sin, tá céim nua á stáidéar agam. Is breá liom an fhisic agus an chosmeolaíocht chomh maith, ach níl mo chuid matamaitice maith go leor. Buíochas le hiniúchadh na heolaíochta, tháinig mé i mo dhuine níos fearr, mar d\'fhoghlaim mé an tábhacht de bhréagnú, de fhianaise agus de cheapadh criticiúil.'
+                        TEXT: 'Tá suim ollmhór agam san eolaíocht - sa cheimic orgánach agus sa chógaseolaíocht go háirithe. Mar gheall air sin, tá céim nua á stáidéar agam. Is breá liom an fhisic agus an chosmeolaíocht chomh maith, ach níl mo chuid matamaitice maith go leor. Buíochas le hiniúchadh na heolaíochta, tháinig mé i mo dhuine níos fearr, mar d\'fhoghlaim mé an tábhacht de bhréagnú, de fhianaise agus de cheapadh criticiúil.'
                     },
                     LANGUAGES:
                     {
