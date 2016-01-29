@@ -15,7 +15,7 @@
                     P2: 'I have worked variously as a network engineer, a system administrator, an intern, a junior developer, a senior developer and a contractor. My industry experience ranges from small companies providing services to local clients; to start-ups; to trans-national giants of the games industry, working on the technology that powers AAA titles; to voluntary contributions to free software projects.',
                     P3: 'Computers are interesting, if you think about it; they are an interface that gives us the ability to manipulate electrons into doing nearly instantaneous mathematical calculations and processing unimaginable amounts of data. For most of human history, our inventions have focussed on making up for our abilities that couldn\'t perform as well as we needed. The brain is still very much mysterious, but the computer has given us the ability to - for the first time - augment its processing capability in a form of symbiosis. We are bad at maths; computers excel at maths. Computers are bad at heuristics; we excel at heuristics.',
                     P4: 'That is interesting, isn\'t it?',
-                    P5: 'I am available for various forms of work - full-stack development and system administration - at very competitive rates.',
+                    P5: 'I am <a href="contact">available for various forms of work</a> - full-stack development and system administration - at very competitive rates.',
                     SKILLS:
                     {
                         HEADING: 'Skills',
@@ -89,7 +89,7 @@
                     CYCLING:
                     {
                         HEADING: 'Cycling',
-                        TEXT: 'Exercise can be boring - but not cycling. It is fun, efficient, liberating and often faster than the alternatives. Evidence suggests that mass cycling benefits everyone. It\'s the ultimate form of transport.'
+                        TEXT: 'Love it. That\'s all.'
                     }
                 },
                 EXPERIENCE:
@@ -249,10 +249,10 @@
                 SYNOPSIS:
                 {
                     P1: 'Is mise David agus is as Áth Cliath dom.',
-                    P2: 'Bhí mé i m\'innealtóir líonra, mo riarthóir córais, m\'intéirneach, m\'fhorbróir sóisearach, m\'ard-fhorbróir agus m\'oibrí ar conradh agam. Baineann mo thaithí tionscail le comhlachtaí beaga ag cuir seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
+                    P2: 'Bhí mé i m\'innealtóir líonra, mo riarthóir córais, m\'intéirneach, m\'fhorbróir sóisearach, m\'ard-fhorbróir agus m\'oibrí ar conradh agam. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
                     P3: 'Tá ríomhairí suimiúil, má smaoinítear orthu; tá siad mar droichead eadrainn agus idir an domhan fo-adamhach, chun é a ionramháil le fadhbanna mhóra a réiteach agus chun sonraí ollmhóra a phróiseáil. Ar feadh an chuid is mó dár stair, chruthaíomar aireagáin chun ár gcumas a fheabhsú. Tá an inchinn fós rúndiamhair, ach buíochas le ríomhairí, is féidir linn a hachmainn táirgthe a chuidiú. Táimid go dona ag an matamaitic; tá ríomhairí ar feabhas aici. Tá siad go huafásach ag heorastaic; déantar ár n-inchinn dóibh.',
                     P4: 'Suimiúil, nach bhfuil?',
-                    P5: 'Táim le hobair éagsúil - forbairt lán-chruacha agus riarachán córais - ag táillí iomaíocha.',
+                    P5: 'Táim <a href="/contact">le hobair éagsúil</a> - forbairt lán-chruacha agus riarachán córais - ag táillí iomaíocha.',
                     SKILLS:
                     {
                         HEADING: 'Skills',
@@ -305,28 +305,28 @@
                 {
                     COMPUTERS:
                     {
-                        HEADING: 'Computers',
-                        TEXT: 'I\'ve been using computers since the Intel 386 and love tinkering with them. C++ was my first language and it naturally baffled me. Almost two decades later and it still does from time to time; that\'s its nature.'
+                        HEADING: 'Ríomhairí',
+                        TEXT: 'Tosaíodh ríomhairí i bhfeidhm liom leis an Intel 386 agus is aoibhinn liom leo a thincéireacht. B\'í C++ mo chéad teanga ríomaireachta í; ar ndóigh, chuir sí mearbhall orm. Beagnach scór bliain níos déanaí agus is céanna é an scéal fós - cuid bhunúsach di atá ann sin.'
                     },
                     MUSIC:
                     {
-                        HEADING: 'Music',
-                        TEXT: 'Music is very important to me; it is an emotional rollercoaster and source of comfort, inspiration, relaxation and excitement. I received my first guitar at the age of 13 and was immediately captivated. Having played in several <a href="https://coloursystemfailure.bandcamp.com">bands</a>, I now jam occasionally with a group of musicians in Dublin. Unfortunately, I don\'t have the time to go back on the road in any meaningful sense - at least for now.'
+                        HEADING: 'Ceol',
+                        TEXT: 'Tá mó chroí istigh sa cheol. Soláthraíonn sé só, spreagadh, scíth agus na sceitimíní. Fuair mé mo chéad giotár nuair a bhí mé 13 agus cuireadh mé faoi dhraíocht go tobann. Faoi láthair, seinnim le grúpa ceoilteoirí i mBaile Átha Cliath uaireanta, ach bhí mé i roinnt <a href="https://coloursystemfailure.bandcamp.com">bannaí ceoil</a> roimhe sin. Níl dóthain ama agam chun é sin a dhéanamh arís.'
                     },
                     SCIENCE:
                     {
-                        HEADING: 'Science',
-                        TEXT: 'I have a great interest in science, particularly organic chemistry and pharmacology. In fact, I am so intrigued by them that a second degree is almost within my grasp. Physics and cosmology are great, too, but maths has never been a great skill of mine. Exploring the world of science has made me a better person by granting me an understanding of the importance of falsifiability, evidence and critical thinking.'
+                        HEADING: 'Eolaíocht',
+                        TEXT: 'Tá suim ollmhór agam san eolaíocht - sa cheimic orgánach agus sa chógaseolaíocht go háirithe. Mar gheall ar sin, tá céim nua á stáidéar agam. Is breá liom an fhisic agus an chosmeolaíocht chomh maith, ach níl mo chuid matamaitice maith go leor. Buíochas le hiniúchadh na heolaíochta, tháinig mé i mo dhuine níos fearr, mar d\'fhoghlaim mé an tábhacht de bhréagnú, de fhianaise agus de cheapadh criticiúil.'
                     },
                     LANGUAGES:
                     {
-                        HEADING: 'Languages',
-                        TEXT: 'For most of my life, I only had one language. Then, there were two. Now, I\'m trying for a third. Gaelic and Nordic languages are of particular interest, as it etymology. It\'s amazing how words leak between languages and how similar linguistic evolution is to that of life. This overlaps with my interest in computer science and computational linguistics. You can find me on <a href="https://www.duolingo.com/coconutlulz">Duolingo</a> and <a href="http://www.memrise.com/user/coconutlulz/">Memrise</a>.'
+                        HEADING: 'Teangacha',
+                        TEXT: 'Ar feadh an chuid is mó de mo shaol, bhí teanga amháin agam. Ansin, bhí dhá agam. Anois, déanaim iarracht as mo thriú ceann. Tá suim agam sna teangacha Gaelacha agus Lochlainnise agus sa shanasaíocht freisin. Tá ceangal eatarthu agus idir mó shuim san eolaíocht ríomhaireachta agus sa theangeolaíocht ríomhaireachta. Táim ar fáil ar <a href="https://www.duolingo.com/coconutlulz">Duolingo</a> and <a href="http://www.memrise.com/user/coconutlulz/">Memrise</a>.'
                     },
                     CYCLING:
                     {
-                        HEADING: 'Cycling',
-                        TEXT: 'Exercise can be boring - but not cycling. It is fun, efficient, liberating and often faster than the alternatives. Evidence suggests that mass cycling benefits everyone. It\'s the ultimate form of transport.'
+                        HEADING: 'Rothaíocht',
+                        TEXT: 'Is aoibhinn liom í. Sin é.'
                     }
                 },
                 EXPERIENCE:
