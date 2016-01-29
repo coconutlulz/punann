@@ -92,68 +92,242 @@
             $translate(['SYNOPSIS.P1',
                     'SYNOPSIS.P2',
                     'SYNOPSIS.P3',
-                    'SYNOPSIS.P4']);
+                    'SYNOPSIS.P4',
+                    'SYNOPSIS.P5',
+                    'SYNOPSIS.SKILLS.HEADING',
+                    'SYNOPSIS.SKILLS.DEV.HEADING',
+                    'SYNOPSIS.SKILLS.DEV.SUB',
+                    'SYNOPSIS.SKILLS.DEV.SECTION1',
+                    'SYNOPSIS.SKILLS.OPS.HEADING',
+                    'SYNOPSIS.SKILLS.OPS.SUB',
+                    'SYNOPSIS.SKILLS.OPS.SECTION1',
+                    'SYNOPSIS.SKILLS.OPS.SECTION2',
+                    'SYNOPSIS.SKILLS.OPS.SECTION3',
+                    'SYNOPSIS.SKILLS.OPS.SECTION4',
+                    'SYNOPSIS.SKILLS.OTHER.HEADING',
+                    'SYNOPSIS.SKILLS.OTHER.TECHWRITING',
+                    'SYNOPSIS.ABILITIES.HEADING',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.HEADING',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.NAME',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.LEVEL',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.IRISH.NAME',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.IRISH.LEVEL',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.NAME',
+                    'SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.LEVEL'
+            ]).then(function(translations) {
+                controller.skills = [
+                    {
+                        heading: translations['SYNOPSIS.SKILLS.DEV.HEADING'],
+                        sub: translations['SYNOPSIS.SKILLS.DEV.SUB'],
+                        sections: [
+                            {
+                                heading: translations['SYNOPSIS.SKILLS.DEV.SECTION1'],
+                                items: [
+                                    {
+                                        names: ['Python 2', 'Python 3'],
+                                        subitems: ['SQLAlchemy', 'Alembic', 'Django', 'Pyramid']
+                                    },
+                                    {
+                                        names: ['JavaScript'],
+                                        subitems: ['AngularJS', 'jQuery']
+                                    },
+                                    {
+                                        names: ['HTML5', 'CSS']
+                                    },
+                                    {
+                                        names: ['C']
+                                    },
+                                    {
+                                        names: ['C++'],
+                                        subitems: ['Qt']
+                                    },
+                                    {
+                                        names: ['Java']
+                                    },
+                                    {
+                                        names: ['IDEs'],
+                                        subitems: ['vim/neovim', 'PyCharm', 'CodeLite', 'Microsoft Visual Studio']
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        heading: translations['SYNOPSIS.SKILLS.OPS.HEADING'],
+                        sub: translations['SYNOPSIS.SKILLS.OPS.SUB'],
+                        sections: [
+                            {
+                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION1'],
+                                items: [
+                                ]
+                            },
+                            {
+                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION2'],
+                                items: [
+                                ]
+                            },
+                            {
+                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION3'],
+                                items: [
+                                ]
+                            },
+                            {
+                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION4'],
+                                items: [
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        heading: translations['SYNOPSIS.SKILLS.OTHER.HEADING'],
+                        sections: [
+                            translations['SYNOPSIS.SKILLS.OTHER.TECHWRITING']
+                        ]
+                    }
+                ];
+
+                controller.abilities = [
+                    {
+                        heading: translations['SYNOPSIS.ABILITIES.LANGUAGES.HEADING'],
+                        languages: [
+                            {
+                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.NAME'],
+                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.LEVEL']
+                            },
+                            {
+                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.IRISH.NAME'],
+                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.IRISH.LEVEL']
+                            },
+                            {
+                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.NAME'],
+                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.LEVEL']
+                            }
+                        ]
+                    }
+                ];
+            });
+        }])
+        .controller('InterestsController', ['$translate', function($translate) {
+            var controller = this;
+            $translate(['INTERESTS.COMPUTERS.HEADING',
+                    'INTERESTS.COMPUTERS.TEXT',
+                    'INTERESTS.MUSIC.HEADING',
+                    'INTERESTS.MUSIC.TEXT',
+                    'INTERESTS.SCIENCE.HEADING',
+                    'INTERESTS.SCIENCE.TEXT',
+                    'INTERESTS.LANGUAGES.HEADING',
+                    'INTERESTS.LANGUAGES.TEXT',
+                    'INTERESTS.CYCLING.HEADING',
+                    'INTERESTS.CYCLING.TEXT'
+            ]).then(function(translations) {
+                controller.interests = [
+                    {
+                        heading: translations['INTERESTS.COMPUTERS.HEADING'],
+                        text: translations['INTERESTS.COMPUTERS.TEXT']
+                    },
+                    {
+                        heading: translations['INTERESTS.MUSIC.HEADING'],
+                        text: translations['INTERESTS.MUSIC.TEXT']
+                    },
+                    {
+                        heading: translations['INTERESTS.SCIENCE.HEADING'],
+                        text: translations['INTERESTS.SCIENCE.TEXT']
+                    },
+                    {
+                        heading: translations['INTERESTS.LANGUAGES.HEADING'],
+                        text: translations['INTERESTS.LANGUAGES.TEXT']
+                    },
+                    {
+                        heading: translations['INTERESTS.CYCLING.HEADING'],
+                        text: translations['INTERESTS.CYCLING.TEXT']
+                    }
+                ];
+
+                var root = 'INTERESTS';
+                controller.translationIDs = [
+                    {
+                        heading: root + '.COMPUTERS.HEADING',
+                        text: root + '.COMPUTERS.TEXT'
+                    },
+                    {
+                        heading: root + '.MUSIC.HEADING',
+                        text: root + '.MUSIC.TEXT'
+                    },
+                    {
+                        heading: root + '.SCIENCE.HEADING',
+                        text: root + '.SCIENCE.TEXT'
+                    },
+                    {
+                        heading: root + '.LANGUAGES.HEADING',
+                        text: root + '.LANGUAGES.TEXT'
+                    },
+                    {
+                        heading: root + '.CYCLING.HEADING',
+                        text: root + '.CYCLING.TEXT'
+                    }
+                ];
+            })
         }])
         .controller('ExperienceController', ['$translate', function($translate) {
             var controller = this;
-            $translate(['PROEXPERIENCE.AL.TITLE',
-                    'PROEXPERIENCE.AL.DATERANGE',
-                    'PROEXPERIENCE.AL.DUTIES.DESCRIPTION1',
-                    'PROEXPERIENCE.AL.DUTIES.TECHNOLOGIES1',
-                    'PROEXPERIENCE.TAILIFY.TITLE',
-                    'PROEXPERIENCE.TAILIFY.DATERANGE',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION1',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION2',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION3',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION4',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION5',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION6',
-                    'PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION7',
-                    'PROEXPERIENCE.DW.TITLE',
-                    'PROEXPERIENCE.DW.DATERANGE',
-                    'PROEXPERIENCE.DW.DUTIES.DESCRIPTION1',
-                    'PROEXPERIENCE.DW.DUTIES.DESCRIPTION2',
-                    'PROEXPERIENCE.DW.DUTIES.DESCRIPTION3',
-                    'PROEXPERIENCE.DW.DUTIES.DESCRIPTION4',
-                    'PROEXPERIENCE.DW.DUTIES.DESCRIPTION5',
-                    'PROEXPERIENCE.KERNA.TITLE',
-                    'PROEXPERIENCE.KERNA.DATERANGE',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION1',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION2',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION3',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION4',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION5',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION6',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION7',
-                    'PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION8',
-                    'PROEXPERIENCE.STREAM.TITLE',
-                    'PROEXPERIENCE.STREAM.DATERANGE',
-                    'PROEXPERIENCE.SBS.TITLE',
-                    'PROEXPERIENCE.SBS.DATERANGE',
-                    'VOLEXPERIENCE.FSTRANSLATOR.ORGANISATION',
-                    'VOLEXPERIENCE.FSTRANSLATOR.TITLE',
-                    'VOLEXPERIENCE.FSTRANSLATOR.DATERANGE',
-                    'VOLEXPERIENCE.FSTRANSLATOR.DUTIES.DESCRIPTION1',
-                    'VOLEXPERIENCE.FSTRANSLATOR.DUTIES.DESCRIPTION2',
-                    'VOLEXPERIENCE.FS.ORGANISATION',
-                    'VOLEXPERIENCE.FS.TITLE',
-                    'VOLEXPERIENCE.FS.DATERANGE',
-                    'VOLEXPERIENCE.FS.DUTIES.DESCRIPTION1'
+            $translate(['EXPERIENCE.PROFESSIONAL.AL.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.AL.DATERANGE',
+                    'EXPERIENCE.PROFESSIONAL.AL.DUTIES.DESCRIPTION1',
+                    'EXPERIENCE.PROFESSIONAL.AL.DUTIES.TECHNOLOGIES1',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DATERANGE',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION1',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION2',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION3',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION4',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION5',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION6',
+                    'EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION7',
+                    'EXPERIENCE.PROFESSIONAL.DW.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.DW.DATERANGE',
+                    'EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION1',
+                    'EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION2',
+                    'EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION3',
+                    'EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION4',
+                    'EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION5',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DATERANGE',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION1',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION2',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION3',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION4',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION5',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION6',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION7',
+                    'EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION8',
+                    'EXPERIENCE.PROFESSIONAL.STREAM.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.STREAM.DATERANGE',
+                    'EXPERIENCE.PROFESSIONAL.SBS.TITLE',
+                    'EXPERIENCE.PROFESSIONAL.SBS.DATERANGE',
+                    'EXPERIENCE.VOLUNTARY.FSTRANSLATOR.ORGANISATION',
+                    'EXPERIENCE.VOLUNTARY.FSTRANSLATOR.TITLE',
+                    'EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DATERANGE',
+                    'EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DUTIES.DESCRIPTION1',
+                    'EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DUTIES.DESCRIPTION2',
+                    'EXPERIENCE.VOLUNTARY.FS.ORGANISATION',
+                    'EXPERIENCE.VOLUNTARY.FS.TITLE',
+                    'EXPERIENCE.VOLUNTARY.FS.DATERANGE',
+                    'EXPERIENCE.VOLUNTARY.FS.DUTIES.DESCRIPTION1'
             ]).then(function(translations) {
                 controller.voluntary = [
                     {
-                        organisation: translations['VOLEXPERIENCE.FSTRANSLATOR.ORGANISATION'],
-                        title: translations['VOLEXPERIENCE.FSTRANSLATOR.TITLE'],
-                        dateRange: translations['VOLEXPERIENCE.FSTRANSLATOR.DATERANGE'],
+                        organisation: translations['EXPERIENCE.VOLUNTARY.FSTRANSLATOR.ORGANISATION'],
+                        title: translations['EXPERIENCE.VOLUNTARY.FSTRANSLATOR.TITLE'],
+                        dateRange: translations['EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DATERANGE'],
                         duties: [
                             {
-                                description: translations['VOLEXPERIENCE.FSTRANSLATOR.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DUTIES.DESCRIPTION1'],
                                 technologies: [
                                     'Transifex'
                                 ]
                             },
                             {
-                                description: translations['VOLEXPERIENCE.FSTRANSLATOR.DUTIES.DESCRIPTION2'],
+                                description: translations['EXPERIENCE.VOLUNTARY.FSTRANSLATOR.DUTIES.DESCRIPTION2'],
                                 technologies: [
                                     'Transifex'
                                 ]
@@ -161,12 +335,12 @@
                         ]
                     },
                     {
-                        organisation: translations['VOLEXPERIENCE.FS.ORGANISATION'],
-                        title: translations['VOLEXPERIENCE.FS.TITLE'],
-                        dateRange: translations['VOLEXPERIENCE.FS.DATERANGE'],
+                        organisation: translations['EXPERIENCE.VOLUNTARY.FS.ORGANISATION'],
+                        title: translations['EXPERIENCE.VOLUNTARY.FS.TITLE'],
+                        dateRange: translations['EXPERIENCE.VOLUNTARY.FS.DATERANGE'],
                         duties: [
                             {
-                                description: translations['VOLEXPERIENCE.FS.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.VOLUNTARY.FS.DUTIES.DESCRIPTION1'],
                                 technologies: [
                                     'C++',
                                     'Qt'
@@ -179,22 +353,23 @@
                     {
                         organisation: 'The Analyst Lounge',
                         link: 'http://www.theanalystlounge.com',
-                        title: translations['PROEXPERIENCE.AL.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.AL.DATERANGE'],
+                        title: translations['EXPERIENCE.PROFESSIONAL.AL.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.AL.DATERANGE'],
                         duties: [
                             {
-                                description: translations['PROEXPERIENCE.AL.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.AL.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.AL.DUTIES.TECHNOLOGIES1']
                             }
                         ]
                     },
                     {
                         organisation: 'Tailify',
                         link: 'http://www.tailify.com',
-                        title: translations['PROEXPERIENCE.TAILIFY.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.TAILIFY.DATERANGE'],
+                        title: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DATERANGE'],
                         duties: [
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION1'],
                                 technologies: [
                                     'Python 2.7',
                                     'Instagram API',
@@ -203,7 +378,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION2'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION2'],
                                 technologies: [
                                     'Python 2.7',
                                     'Shell scripting',
@@ -214,7 +389,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION3'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION3'],
                                 technologies: [
                                     'Ubuntu 14.04',
                                     'Apache 2 httpd',
@@ -224,7 +399,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION4'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION4'],
                                 technologies: [
                                     'Python 2.7',
                                     'Celery',
@@ -234,7 +409,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION5'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION5'],
                                 technologies: [
                                     'Mediawiki',
                                     'Stikked',
@@ -244,14 +419,14 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION6'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION6'],
                                 technologies: [
                                     'Google Two-Factor Authentication',
                                     'GNU Privacy Guard'
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.TAILIFY.DUTIES.DESCRIPTION7'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.TAILIFY.DUTIES.DESCRIPTION7'],
                                 technologies: [
                                     'Mediawiki'
                                 ]
@@ -261,11 +436,11 @@
                     {
                         organisation: 'Demonware',
                         link: 'https://www.demonware.net',
-                        title: translations['PROEXPERIENCE.DW.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.DW.DATERANGE'],
+                        title: translations['EXPERIENCE.PROFESSIONAL.DW.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.DW.DATERANGE'],
                         duties: [
                             {
-                                description: translations['PROEXPERIENCE.DW.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION1'],
                                 technologies: [
                                     'Python 2.5',
                                     'Python 2.7',
@@ -277,14 +452,14 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.DW.DUTIES.DESCRIPTION2'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION2'],
                                 technologies: [
                                     'C++',
                                     'Microsoft Visual Studio 2010'
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.DW.DUTIES.DESCRIPTION3'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION3'],
                                 technologies: [
                                     'Python 2.7',
                                     'Redis',
@@ -292,7 +467,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.DW.DUTIES.DESCRIPTION4'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION4'],
                                 technologies: [
                                     'Python 2.7',
                                     'Atlassian Bamboo',
@@ -305,7 +480,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.DW.DUTIES.DESCRIPTION5'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.DW.DUTIES.DESCRIPTION5'],
                                 technologies: [
                                     'Mediawiki',
                                     'LaTeX'
@@ -316,18 +491,18 @@
                     {
                         organisation: 'Kerna Communications',
                         link: 'http://www.kerna.ie',
-                        title: translations['PROEXPERIENCE.KERNA.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.KERNA.DATERANGE'],
+                        title: translations['EXPERIENCE.PROFESSIONAL.KERNA.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.KERNA.DATERANGE'],
                         duties: [
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION1'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION1'],
                                 technologies: [
                                     'Routers and layer 2/3 switches (Cisco; Netgear; 3COM)',
                                     'Linux/BSD kernel routing/ARP tables'
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION2'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION2'],
                                 technologies: [
                                     'Checkpoint SecurePlatform',
                                     'Juniper SRX',
@@ -347,7 +522,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION3'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION3'],
                                 technologies: [
                                     'Nagios 2/3',
                                     'Cacti',
@@ -363,7 +538,7 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION4'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION4'],
                                 technologies: [
                                     'Windows Server 2003/2007',
                                     'GNU/Linux (Slackware, CentOS)',
@@ -376,14 +551,14 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION5'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION5'],
                                 technologies: [
                                     'Apache 2 httpd',
                                     'SSL'
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION6'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION6'],
                                 technologies: [
                                     'sendmail',
                                     'exim',
@@ -394,79 +569,79 @@
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION7'],
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION7'],
                                 technologies: [
                                     'BIND',
                                     'TinyDNS'
                                 ]
                             },
                             {
-                                description: translations['PROEXPERIENCE.KERNA.DUTIES.DESCRIPTION8']
+                                description: translations['EXPERIENCE.PROFESSIONAL.KERNA.DUTIES.DESCRIPTION8']
                             }
                         ]
                     },
                     {
                         organisation: 'Stream International',
                         link: 'http://www.eir.ie',
-                        title: translations['PROEXPERIENCE.STREAM.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.STREAM.DATERANGE']
+                        title: translations['EXPERIENCE.PROFESSIONAL.STREAM.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.STREAM.DATERANGE']
                     },
                     {
                         organisation: 'Siemens Business Services',
                         link: 'http://www.siemens.com',
-                        title: translations['PROEXPERIENCE.SBS.TITLE'],
-                        dateRange: translations['PROEXPERIENCE.SBS.DATERANGE']
+                        title: translations['EXPERIENCE.PROFESSIONAL.SBS.TITLE'],
+                        dateRange: translations['EXPERIENCE.PROFESSIONAL.SBS.DATERANGE']
                     }
                 ];
             });
         }])
         .controller('EducationController', ['$translate', function($translate) {
             var controller = this;
-            $translate(['FORMALEDUCATION.DCU.INSTITUTION',
-                    'FORMALEDUCATION.DCU.TITLE',
-                    'FORMALEDUCATION.DCU.DATERANGE',
-                    'FORMALEDUCATION.DCU.GRADEDESCRIPTION',
-                    'FORMALEDUCATION.DCU.NOTES',
-                    'FORMALEDUCATION.OU.INSTITUTION',
-                    'FORMALEDUCATION.OU.TITLE',
-                    'FORMALEDUCATION.OU.DATERANGE',
-                    'FORMALEDUCATION.OU.GRADE',
-                    'FORMALEDUCATION.OU.GRADEDESCRIPTION',
-                    'FORMALEDUCATION.OU.NOTES',
-                    'FORMALEDUCATION.LC.INSTITUTION',
-                    'FORMALEDUCATION.LC.TITLE',
-                    'FORMALEDUCATION.LC.DATERANGE',
-                    'INFORMALEDUCATION.CNAG.INSTITUTION',
-                    'INFORMALEDUCATION.CNAG.TITLE1',
-                    'INFORMALEDUCATION.CNAG.TITLE2',
-                    'INFORMALEDUCATION.CNAG.TITLE3',
-                    'INFORMALEDUCATION.CNAG.DATERANGE1',
-                    'INFORMALEDUCATION.CNAG.DATERANGE2',
-                    'INFORMALEDUCATION.CNAG.DATERANGE3',
-                    'INFORMALEDUCATION.CNAG.NOTES']).then(function(translations) {
+            $translate(['EDUCATION.FORMAL.DCU.INSTITUTION',
+                    'EDUCATION.FORMAL.DCU.TITLE',
+                    'EDUCATION.FORMAL.DCU.DATERANGE',
+                    'EDUCATION.FORMAL.DCU.GRADEDESCRIPTION',
+                    'EDUCATION.FORMAL.DCU.NOTES',
+                    'EDUCATION.FORMAL.OU.INSTITUTION',
+                    'EDUCATION.FORMAL.OU.TITLE',
+                    'EDUCATION.FORMAL.OU.DATERANGE',
+                    'EDUCATION.FORMAL.OU.GRADE',
+                    'EDUCATION.FORMAL.OU.GRADEDESCRIPTION',
+                    'EDUCATION.FORMAL.OU.NOTES',
+                    'EDUCATION.FORMAL.LC.INSTITUTION',
+                    'EDUCATION.FORMAL.LC.TITLE',
+                    'EDUCATION.FORMAL.LC.DATERANGE',
+                    'EDUCATION.INFORMAL.CNAG.INSTITUTION',
+                    'EDUCATION.INFORMAL.CNAG.TITLE1',
+                    'EDUCATION.INFORMAL.CNAG.TITLE2',
+                    'EDUCATION.INFORMAL.CNAG.TITLE3',
+                    'EDUCATION.INFORMAL.CNAG.DATERANGE1',
+                    'EDUCATION.INFORMAL.CNAG.DATERANGE2',
+                    'EDUCATION.INFORMAL.CNAG.DATERANGE3',
+                    'EDUCATION.INFORMAL.CNAG.NOTES']).then(function(translations) {
 
                 controller.formal = [
                     {
-                        institution: translations['FORMALEDUCATION.OU.INSTITUTION'],
-                        title: translations['FORMALEDUCATION.OU.TITLE'],
+                        institution: translations['EDUCATION.FORMAL.OU.INSTITUTION'],
+                        title: translations['EDUCATION.FORMAL.OU.TITLE'],
                         link: 'http://www.open.ac.uk/courses/qualifications/q64',
-                        dateRange: translations['FORMALEDUCATION.OU.DATERANGE'],
-                        grade: translations['FORMALEDUCATION.OU.GRADE'],
-                        gradeDescription: translations['FORMALEDUCATION.OU.GRADEDESCRIPTION']
+                        dateRange: translations['EDUCATION.FORMAL.OU.DATERANGE'],
+                        grade: translations['EDUCATION.FORMAL.OU.GRADE'],
+                        gradeDescription: translations['EDUCATION.FORMAL.OU.GRADEDESCRIPTION']
                     },
                     {
-                        institution: translations['FORMALEDUCATION.DCU.INSTITUTION'],
-                        title: translations['FORMALEDUCATION.DCU.TITLE'],
+                        institution: translations['EDUCATION.FORMAL.DCU.INSTITUTION'],
+                        title: translations['EDUCATION.FORMAL.DCU.TITLE'],
                         link: 'http://www.computing.dcu.ie/undergraduate/ca/bsc-computer-applications-dc121',
-                        dateRange: translations['FORMALEDUCATION.DCU.DATERANGE'],
+                        dateRange: translations['EDUCATION.FORMAL.DCU.DATERANGE'],
                         grade: '2.1',
-                        gradeDescription: translations['FORMALEDUCATION.DCU.GRADEDESCRIPTION']
+                        gradeDescription: translations['EDUCATION.FORMAL.DCU.GRADEDESCRIPTION']
                     },
                     {
-                        institution: translations['FORMALEDUCATION.LC.INSTITUTION'],
-                        title: translations['FORMALEDUCATION.LC.TITLE'],
+                        institution: translations['EDUCATION.FORMAL.LC.INSTITUTION'],
+                        title: translations['EDUCATION.FORMAL.LC.TITLE'],
                         link: 'http://www.coolminecs.ie',
-                        dateRange: translations['FORMALEDUCATION.LC.DATERANGE']
+                        dateRange: translations['EDUCATION.FORMAL.LC.DATERANGE']
                     }
                 ];
             })

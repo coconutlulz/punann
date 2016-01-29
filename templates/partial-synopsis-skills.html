@@ -1,0 +1,33 @@
+<ul>
+    <li ng-repeat="skill in synCtrl.skills">
+        <h3 class="skillHeading">{{ skill.heading }}</h3>
+        <ul class="skillSection" ng-repeat="section in skill.sections">
+            <li>
+                <h4>{{ section.heading }}</h4>
+                <ul class="skillItems" ng-repeat="item in section.items">
+                    <li>
+                        <p class="skillItem" ng-repeat="name in item.names">
+                            {{ name }}
+                        </p>
+                        <ul class="skillSubItems" ng-repeat="subitem in item.subitems">
+                            {{ subitem }}
+                        </ul>
+                        <hr>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li ng-repeat="ability in synCtrl.abilities">
+        <h3 class="skillHeading">{{ ability.heading }}</h3>
+        <h4 class="skillSubHeading">{{ ability.sub }}</h3>
+        <ul class="skillSection" ng-repeat="language in ability.languages">
+            <li class="listedLanguageItem">
+                <h4 class="languageItemName">{{ language.name }}</h4>
+                <p class="languageItemLevel">{{ language.level }}</p>
+            </li>
+        </ul>
+    </li>
+</ul>

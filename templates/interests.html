@@ -1,0 +1,11 @@
+<div class="mainContent">
+    <h1>{{ 'MENU.INTERESTS' | translate }}</h1>
+    <div class="mainText">
+        <div id="interests" ng-repeat="idPair in interestsCtrl.translationIDs">
+            <h2 class="interestsHeading" translate=" {{ idPair.heading }}">
+            </h2>
+            <p class="interestsBody" translate=" {{ idPair.text }}">
+            </p>
+        </div>
+    </div>
+</div>

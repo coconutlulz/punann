@@ -1,8 +1,9 @@
 <div class="mainContent">
-    <h1>Synopsis</h1>
-    <p>{{ 'SYNOPSIS.P1' | translate }}</p>
-    <p>{{ 'SYNOPSIS.P2' | translate }}</p>
-    <p>{{ 'SYNOPSIS.P3' | translate }}</p>
-    <p>{{ 'SYNOPSIS.P4' | translate }}</p>
-    <p>{{ 'SYNOPSIS.P5' | translate }}</p>
+    <h1>{{ 'MENU.SYNOPSIS' | translate }}</h1>
+    <div class="mainText">
+        <div ui-view="intro" id="synopsisIntro">
+        </div>
+        <div ui-view="skills" id="synopsisSkills">
+        </div>
+    </div>
 </div>
