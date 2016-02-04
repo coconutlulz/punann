@@ -480,7 +480,7 @@
                 .useSanitizeValueStrategy('sanitizeParameters')
                 .usePostCompiling(true)
                 //.determinePreferredLanguage();
-                .preferredLanguage('ga');
+                .preferredLanguage('en');
 
             $logProvider.debugEnabled(true);
 

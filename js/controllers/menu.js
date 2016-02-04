@@ -25,6 +25,11 @@
                         link: '.education'
                     }
                 ];
+
+                controller.changeLanguage = function(key) {
+                    $translate.use(key);
+                    $translate.refresh(key);
+                }
             });
         }])
 })();

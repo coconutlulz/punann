@@ -19,6 +19,7 @@
     <script src="js/controllers/interests.js"></script>
     <script src="js/controllers/experience.js"></script>
     <script src="js/controllers/education.js"></script>
+    <script src="js/directives/languageselector.js"></script>
     <script src="js/directives/menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -29,8 +30,9 @@
             <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
             <div class="fade" ng-if="!nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
         </div>
-        <div ng-controller="MenuController as menuCtrl">
+        <div id="lowerHeader" ng-controller="MenuController as menuCtrl">
             <top-menu items="menuCtrl.menu"></top-menu>
+            <language-selector></language-selector>
         </div>
     </div>
 

@@ -1,6 +1,12 @@
 #header {
+    position: relative;
     width: 100%;
     margin: 0 auto;
+}
+
+#lowerHeader {
+    position: relative;
+    height: 70px;
 }
 
 .navbar {
@@ -8,6 +14,14 @@
     border: 1px solid blue;
     width: 50%;
     clear: both;
+    text-align: center;
+}
+
+#languageSelector {
+    position: absolute;
+    left: 75%;
+    top: 0px;
+    width: 2%;
     text-align: center;
 }
 
