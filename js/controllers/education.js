@@ -5,6 +5,7 @@
             $translate(['EDUCATION.FORMAL.DCU.INSTITUTION',
                     'EDUCATION.FORMAL.DCU.TITLE',
                     'EDUCATION.FORMAL.DCU.DATERANGE',
+                    'EDUCATION.FORMAL.DCU.GRADE',
                     'EDUCATION.FORMAL.DCU.GRADEDESCRIPTION',
                     'EDUCATION.FORMAL.DCU.NOTES',
                     'EDUCATION.FORMAL.OU.INSTITUTION',
@@ -24,6 +25,17 @@
                     'EDUCATION.INFORMAL.CNAG.DATERANGE2',
                     'EDUCATION.INFORMAL.CNAG.DATERANGE3',
                     'EDUCATION.INFORMAL.CNAG.NOTES']).then(function(translations) {
+
+                controller.formalInstitutions = [
+                    {
+                        name: 'OU', 
+                        link: 'http://www.open.ac.uk/courses/qualifications/q64'
+                    },
+                    {
+                        name: 'DCU',
+                        link: 'http://www.computing.dcu.ie/undergraduate/ca/bsc-computer-applications-dc121'
+                    }
+                ];
 
                 controller.formal = [
                     {

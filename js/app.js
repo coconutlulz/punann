@@ -207,6 +207,7 @@
                             INSTITUTION: 'Dublin City University',
                             TITLE: 'BSc. (Hons.) in Computer Applications (Software Engineering)',
                             DATERANGE: '2005 to 2010',
+                            GRADE: '2.1',
                             GRADEDESCRIPTION: 'Higher second-class honours',
                             NOTES: ''
                         },
@@ -444,6 +445,7 @@
                             INSTITUTION: 'Ollscoil Chathair Bhaile Átha Cliath',
                             TITLE: 'Céim Bhaitsiléara Eolaíochta (Gradaim) i bhFeidhmchláir Ríomhaireachta (Innealtóireacht Bogearraí)',
                             DATERANGE: '2005 go 2010',
+                            GRADE: '2.1',
                             GRADEDESCRIPTION: 'Dara honóracha sinsearacha',
                             NOTES: ''
                         },

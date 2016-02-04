@@ -1,10 +1,10 @@
-<ul> 
-    <li ng-repeat="qualification in eduCtrl.formal">
-        <h3 class="eduTitle"><a href="{{ qualification.link }}">{{ qualification.title }}</a></h3>
-        <p class="eduInstitution">{{ qualification.institution }}</p>
-        <p class="eduDateRange">{{ qualification.dateRange }}</p>
-        <p class="eduGrade">{{ qualification.grade }}
-            <span class="eduGradeDescription">{{ qualification.gradeDescription }}</span>
+<ul>
+    <li ng-repeat="institution in eduCtrl.formalInstitutions">
+        <h3 class="eduTitle"><a href="{{ institution.link }}">{{ 'EDUCATION.FORMAL.' + institution.name + '.TITLE' | translate }}</a></h3>
+        <p class="eduInstitution">{{ 'EDUCATION.FORMAL.' + institution.name + '.INSTITUTION' | translate }}</p>
+        <p class="eduDateRange">{{ 'EDUCATION.FORMAL.' + institution.name + '.DATERANGE' | translate }}</p>
+        <p class="eduGrade">{{ 'EDUCATION.FORMAL.' + institution.name + '.GRADE' | translate }}
+            <span class="eduGradeDescription">{{ 'EDUCATION.FORMAL.' + institution.name + '.GRADEDESCRIPTION' | translate }}</span>
         </p>
     </li>
 </ul>
