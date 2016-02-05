@@ -13,30 +13,37 @@
     <script src="js/lib/bower-angular-translate-2.9.0/angular-translate.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services/name.js"></script>
-    <script src="js/controllers/name.js"></script>
-    <script src="js/controllers/menu.js"></script>
-    <script src="js/controllers/synopsis.js"></script>
-    <script src="js/controllers/interests.js"></script>
-    <script src="js/controllers/experience.js"></script>
     <script src="js/controllers/education.js"></script>
+    <script src="js/controllers/experience.js"></script>
+    <script src="js/controllers/interests.js"></script>
+    <script src="js/controllers/language.js"></script>
+    <script src="js/controllers/menu.js"></script>
+    <script src="js/controllers/name.js"></script>
+    <script src="js/controllers/synopsis.js"></script>
     <script src="js/directives/languageselector.js"></script>
     <script src="js/directives/menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <div id="header">
+        <div id="lowerHeader" ng-controller="MenuController as menuCtrl">
+            <top-menu items="menuCtrl.menu"></top-menu>
+        </div>
+    </div>
+
+    <div ui-view>
+    </div>
+
+    <div id="footer">
         <div class="name" ng-controller="NameController as nameCtrl">
             <div id="firstName">{{ nameCtrl.firstName }}</div>
             <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
             <div class="fade" ng-if="!nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
         </div>
-        <div id="lowerHeader" ng-controller="MenuController as menuCtrl">
-            <top-menu items="menuCtrl.menu"></top-menu>
+        <social></social>
+        <div id="languageSelector" ng-controller="LanguageController as langCtrl">
             <language-selector></language-selector>
         </div>
-    </div>
-
-    <div ui-view>
     </div>
 
 </body>

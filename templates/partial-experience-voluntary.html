@@ -1,11 +1,11 @@
 <ul> 
     <li ng-repeat="position in expCtrl.voluntary">
-        <h3 class="expTitle">{{ position.title }}</h3>
-        <p class="expOrganisation"><a href="{{ position.link }}">{{ position.organisation }}</a></p>
-        <p class="expDateRange">{{ position.dateRange }}</p>
+        <h3 class="expTitle">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.TITLE' | translate }}</h3>
+        <p class="expOrganisation"><a href="{{ position.link }}">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.ORGANISATION' | translate }}</a></p>
+        <p class="expDateRange">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DATERANGE' | translate }}</p>
         <ul class="expDuties" ng-repeat="duty in position.duties">
             <li class="expDutiesDuty">
-                <span class="expDutyDescription" translate>{{ duty.description }}</span>
+                <span class="expDutyDescription" translate>{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DUTIES.' + duty.id }}</span>
                 <ul class="expDutyTechnologies" ng-repeat="technology in duty.technologies">
                     <li class="expDutyTechnology">
                         {{ technology }}

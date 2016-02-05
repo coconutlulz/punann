@@ -1,11 +1,11 @@
 <ul> 
     <li ng-repeat="position in expCtrl.professional">
-        <h3 class="expTitle">{{ position.title }}</h3>
+        <h3 class="expTitle">{{ 'EXPERIENCE.PROFESSIONAL.' + position.prefix + '.TITLE' | translate }}</h3>
         <p class="expOrganisation"><a href="{{ position.link }}">{{ position.organisation }}</a></p>
-        <p class="expDateRange">{{ position.dateRange }}</p>
+        <p class="expDateRange">{{ 'EXPERIENCE.PROFESSIONAL.' + position.prefix + '.DATERANGE' | translate }}</p>
         <ul class="expDuties" ng-repeat="duty in position.duties">
             <li class="expDutiesDuty">
-                <span class="expDutyDescription">{{ duty.description }}</span>
+                <span class="expDutyDescription">{{ 'EXPERIENCE.PROFESSIONAL.' + position.prefix + '.DUTIES.' + duty.description | translate }}</span>
                 <ul class="expDutyTechnologies" ng-repeat="technology in duty.technologies">
                     <li class="expDutyTechnology">
                         {{ technology }}

@@ -1,4 +1,3 @@
-<div id="languageSelector" ng-controller="MenuController as menuCtrl">
-    <div class="languageButton" ng-click="menuCtrl.changeLanguage('en')">en</div>
-    <div class="languageButton" ng-click="menuCtrl.changeLanguage('ga')">ga</div>
+<div id="languageSelector" ng-controller="LanguageController as langCtrl">
+    <div class="languageButton" ng-click="langCtrl.changeLanguage(langCtrl.getNextLanguage())">{{ langCtrl.getCurrentLanguage() }}</div>
 </div>

@@ -12,16 +12,8 @@
 .navbar {
     margin: 20px auto;
     border: 1px solid blue;
-    width: 50%;
+    width: 70%;
     clear: both;
-    text-align: center;
-}
-
-#languageSelector {
-    position: absolute;
-    left: 75%;
-    top: 0px;
-    width: 2%;
     text-align: center;
 }
 
@@ -34,26 +26,45 @@
     margin: 0 auto;
 }
 
+#footer {
+    position: fixed;
+    margin: 0 auto;
+    padding: 3px 3px 3px 3px;
+    width: 70%;
+    bottom: 0px;
+    height: 3%;
+    left: 15%;
+    display: inline-block;
+    border: 1px solid blue;
+}
+
+#languageSelector {
+    position: absolute;
+    right: 5%;
+    top: 0px;
+    width: 2%;
+    text-align: center;
+}
+
 .name {
     position: relative;
+    left: 0%;
     display: inline-block;
-    margin: 10px 0px 0px 43%;
-    width: 10%;
+    font-size: 12px;
+    width: 50%;
 }
 
 #firstName {
-    position: relative;
-    z-index: 1;
+    top: 2%;
+    bottom: 0px;
     text-align: left;
 }
 
 .fade {
     position: absolute;
-    width: 100px;
-    left: 100px;
-    top: 0px;
-    z-index: 2;
-    text-align: right;
+    top: 0%;
+    left: 33px;
+    text-align: left;
 }
 
 .fade.ng-enter {

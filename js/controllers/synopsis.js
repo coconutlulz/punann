@@ -30,15 +30,14 @@
             ]).then(function(translations) {
                 controller.skills = [
                     {
-                        heading: translations['SYNOPSIS.SKILLS.DEV.HEADING'],
-                        sub: translations['SYNOPSIS.SKILLS.DEV.SUB'],
+                        prefix: 'DEV',
                         sections: [
                             {
-                                heading: translations['SYNOPSIS.SKILLS.DEV.SECTION1'],
+                                heading: 'SECTION1',
                                 items: [
                                     {
                                         names: ['Python 2', 'Python 3'],
-                                        subitems: ['SQLAlchemy', 'Alembic', 'Django', 'Pyramid']
+                                        subitems: ['SQLAlchemy', 'Alembic', 'Django', 'Pyramid', 'celery', 'flower']
                                     },
                                     {
                                         names: ['JavaScript'],
@@ -52,7 +51,7 @@
                                     },
                                     {
                                         names: ['C++'],
-                                        subitems: ['Qt']
+                                        subitems: ['Qt', 'Allegro']
                                     },
                                     {
                                         names: ['Java']
@@ -66,55 +65,70 @@
                         ]
                     },
                     {
-                        heading: translations['SYNOPSIS.SKILLS.OPS.HEADING'],
-                        sub: translations['SYNOPSIS.SKILLS.OPS.SUB'],
+                        prefix: 'OPS',
                         sections: [
                             {
-                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION1'],
+                                heading: 'SECTION1',
+                                items: [
+                                    {
+                                        names: ['GNU/Linux', 'BSD'],
+                                        subitems: ['Debian', 'Ubuntu', 'CentOS', 'Red Hat', 'Fedora', 'Arch Linux', 'OpenBSD', 'FreeBSD']
+                                    },
+                                    {
+                                        names: ['Windows Server']
+                                    }
+                                ]
+                            },
+                            {
+                                heading: 'SECTION2',
+                                items: [
+                                    {
+                                        names: ['IaaS'],
+                                        subitems: ['Amazon Web Services (AWS/EC2)', 'Google Compute Engine (GCE)']
+                                    },
+                                    {
+                                        names: ['HTTPD'],
+                                        subitems: ['Apache', 'nginx']
+                                    },
+                                    {
+                                        names: ['SQL'],
+                                        subitems: ['MySQL Community Edition', 'Percona XtraDB Cluster']
+                                    },
+                                    {
+                                        names: ['NoSQL'],
+                                        subitems: ['Redis']
+                                    },
+                                ]
+                            },
+                            {
+                                heading: 'SECTION3',
                                 items: [
                                 ]
                             },
                             {
-                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION2'],
-                                items: [
-                                ]
-                            },
-                            {
-                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION3'],
-                                items: [
-                                ]
-                            },
-                            {
-                                heading: translations['SYNOPSIS.SKILLS.OPS.SECTION4'],
+                                heading: 'SECTION4',
                                 items: [
                                 ]
                             }
                         ]
                     },
                     {
-                        heading: translations['SYNOPSIS.SKILLS.OTHER.HEADING'],
+                        prefix: 'OTHER',
                         sections: [
-                            translations['SYNOPSIS.SKILLS.OTHER.TECHWRITING']
+                            {
+                                heading: 'TECHWRITING'
+                            }
                         ]
                     }
                 ];
 
                 controller.abilities = [
                     {
-                        heading: translations['SYNOPSIS.ABILITIES.LANGUAGES.HEADING'],
+                        prefix: 'LANGUAGES',
                         languages: [
-                            {
-                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.NAME'],
-                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.ENGLISH.LEVEL']
-                            },
-                            {
-                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.IRISH.NAME'],
-                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.IRISH.LEVEL']
-                            },
-                            {
-                                name: translations['SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.NAME'],
-                                level: translations['SYNOPSIS.ABILITIES.LANGUAGES.FINNISH.LEVEL']
-                            }
+                            'ENGLISH',
+                            'IRISH',
+                            'FINNISH'
                         ]
                     }
                 ];

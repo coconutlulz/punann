@@ -103,8 +103,7 @@
                             DATERANGE: 'October 2015 to present',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Provide software engineering and system administration services to external clients.',
-                                TECHNOLOGIES1: 'Technologies used vary by client.'
+                                DESCRIPTION1: 'Provide software engineering and system administration services to external clients. Technologies vary by client.'
                             }
                         },
                         TAILIFY:
@@ -250,37 +249,37 @@
                 SYNOPSIS:
                 {
                     P1: 'Is mise David agus is as Áth Cliath dom.',
-                    P2: 'Bhí mé i m\'innealtóir líonra, mo riarthóir córais, m\'intéirneach, m\'fhorbróir sóisearach, m\'ard-fhorbróir agus m\'oibrí ar conradh agam. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
+                    P2: 'Bhí mé i m\'innealtóir líonra, mo riarthóir córas, m\'intéirneach, m\'fhorbróir sóisearach, m\'ard-fhorbróir agus m\'oibrí ar conradh agam. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
                     P3: 'Tá ríomhairí suimiúil, má smaoinítear orthu; tá siad mar droichead eadrainn agus idir an domhan fo-adamhach, chun é a ionramháil le fadhbanna mhóra a réiteach agus chun sonraí ollmhóra a phróiseáil. Ar feadh an chuid is mó dár stair, chruthaíomar aireagáin chun ár gcumas a fheabhsú. Tá an inchinn fós rúndiamhair, ach buíochas le ríomhairí, is féidir linn a hachmainn táirgthe a chuidiú. Táimid go dona ag an matamaitic; tá ríomhairí ar feabhas aici. Tá siad go huafásach ag heorastaic; déantar ár n-inchinn dóibh.',
                     P4: 'Suimiúil, nach bhfuil?',
-                    P5: 'Táim <a href="/contact">le hobair éagsúil</a> - forbairt lán-chruacha agus riarachán córais - ag táillí iomaíocha.',
+                    P5: 'Táim <a href="/contact">le hobair éagsúil</a> - forbairt lán-chruacha agus riarachán córas - ag táillí iomaíocha.',
                     SKILLS:
                     {
-                        HEADING: 'Skills',
+                        HEADING: 'Cumas Teicniúla',
                         DEV:
                         {
-                            HEADING: 'Development',
-                            SUB: 'Full-Stack',
-                            SECTION1: 'Languages, Frameworks and Libraries',
+                            HEADING: 'Forbairt Bogearraí',
+                            SUB: 'Lán-Chruacha',
+                            SECTION1: 'Teangacha, Creatlacha agus Leabharlanna',
                         },
                         OPS:
                         {
-                            HEADING: 'Operations',
-                            SUB: 'System Administration and Network Engineering',
-                            SECTION1: 'Operating Systems',
-                            SECTION2: 'Services',
-                            SECTION3: 'Networking',
-                            SECTION4: 'Security'
+                            HEADING: 'Feidhmiú',
+                            SUB: 'Riarachán Córas agus Innealtóireacht Líonra',
+                            SECTION1: 'Córais Oibriúchán',
+                            SECTION2: 'Seirbhísí',
+                            SECTION3: 'Líonrú',
+                            SECTION4: 'Slándáil'
                         },
                         OTHER:
                         {
-                            HEADING: 'Related',
-                            TECHWRITING: 'Technical Writing'
+                            HEADING: 'Ceangailte',
+                            TECHWRITING: 'Scríbhneoireacht Teicniúil'
                         }
                     },
                     ABILITIES:
                     {
-                        HEADING: 'Abilities',
+                        HEADING: 'Cumas Eile',
                         LANGUAGES:
                         {
                             HEADING: 'Teangacha',
@@ -341,8 +340,7 @@
                             DATERANGE: 'Deireadh Fómhair 2015 go láithreach',
                             DUTIES:
                             {
-                                DESCRIPTION1: 'Cuir seirbhísí innealtóireachta bogearraí \'s riaracháin córais le fáil do chliaint sheachtracha.',
-                                TECHNOLOGIES1: 'Athraítear an teicneolaíocht i bhfeidhm idir chliaint.'
+                                DESCRIPTION1: 'Cuir seirbhísí innealtóireachta bogearraí \'s riaracháin córas le fáil do chliaint sheachtracha. Athraítear an teicneolaíocht i bhfeidhm idir chliaint.'
                             }
                         },
                         TAILIFY:
@@ -382,7 +380,7 @@
                                 DESCRIPTION1: 'Innealtóireacht líonra.',
                                 DESCRIPTION2: 'Formulation and maintenance of security policies for external clients.',
                                 DESCRIPTION3: 'Monitoring, intrusion detection, auditing, diagnostics.',
-                                DESCRIPTION4: 'Riarachán córais.',
+                                DESCRIPTION4: 'Riarachán córas.',
                                 DESCRIPTION5: 'Web hosting.',
                                 DESCRIPTION6: 'E-mail hosting, spam filtering, virus detection.',
                                 DESCRIPTION7: 'DNS hosting and configuration.',
@@ -407,7 +405,7 @@
                         {
                             ORGANISATION: 'Saorearraí',
                             TITLE: 'Aistritheoir (An Ghaeilge go dtí Béarla)',
-                            DATERANGE: 'September 2015 to present',
+                            DATERANGE: 'Meán Fómhair 2015 go láithreach',
                             DUTIES:
                             {
                                 DESCRIPTION1: 'Seinnteoir ceoil <a href="https://www.transifex.com/gnumdk/lollypop/">Lollypop</a>',
