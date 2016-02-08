@@ -374,10 +374,10 @@
                             {
                                 DESCRIPTION1: 'Ailtire bogearraí agus ardfhorbróir do gach seirbhís cúil agus comhéadán na meáin shóisialta ag Tailify - scrúduithe san áireamh.',
                                 DESCRIPTION2: 'Dearadh, riarachán agus déanamh chóipeanna chúltaca de bhunachar sonraí.',
-                                DESCRIPTION3: 'Design and maintenance of fault-tolerant, scalable infrastructure that is capable of handling massive volumes of data.',
-                                DESCRIPTION4: 'RESTful and non-RESTful API development; remote task management.',
-                                DESCRIPTION5: 'Maintenance of internal services.',
-                                DESCRIPTION6: 'Internal security policy and enforcement.',
+                                DESCRIPTION3: 'Dearadh agus cothabháil bonneagair inscálaithe frithsheasmhach ag próiseáil go leor sonraí.',
+                                DESCRIPTION4: 'Forbairt API (RESTful agus neamh-RESTful); bainistíocht cian-tascanna.',
+                                DESCRIPTION5: 'Cothabháil séirbhísí inmheánacha.',
+                                DESCRIPTION6: 'Slándáil inmheánach.',
                                 DESCRIPTION7: 'Cáipéisí iomlána.'
                             }
                         },
@@ -387,11 +387,11 @@
                             DATERANGE: 'Meán Fómhair 2012 go Meán Fómhair 2014',
                             DUTIES: 
                             {
-                                DESCRIPTION1: 'Development and maintenance of online services, including: lobby services, match-making, cheat detection, data storage etc.',
-                                DESCRIPTION2: 'Development and maintenance of client-side library for Demonware services.',
-                                DESCRIPTION3: 'Leading an investigation into the replacement of a key proprietary technology with a free/libre alternative.',
-                                DESCRIPTION4: 'Build engineering: automated building and testing.',
-                                DESCRIPTION5: 'Documentation: installation guides, run-books for SREs.'
+                                DESCRIPTION1: 'Forbairt agus cothabháil seirbhísí ar-líne: seirbhísí forhallaí, déanamh comhchaighdeán, brath aicearraí, stóras sonraí srl. san áireamh.',
+                                DESCRIPTION2: 'Forbairt agus cothabháil leabharlanna na gcliant.',
+                                DESCRIPTION3: 'Bheith mar ceannasaí fiosrúcháin maidir le feidhm a bhaint as saorearraí in áit bogearraí dílsithe.',
+                                DESCRIPTION4: 'Innealtóireacht tógála: uath-thógáil agus uath-thástáil.',
+                                DESCRIPTION5: 'Cáipéisí.'
                             }
                         },
                         KERNA:
@@ -401,12 +401,12 @@
                             DUTIES: 
                             {
                                 DESCRIPTION1: 'Innealtóireacht líonra.',
-                                DESCRIPTION2: 'Formulation and maintenance of security policies for external clients.',
-                                DESCRIPTION3: 'Monitoring, intrusion detection, auditing, diagnostics.',
+                                DESCRIPTION2: 'Dearadh bheartais slándála do chliaint sheachtracha.',
+                                DESCRIPTION3: 'Monatóireacht, brath ionraí, iniúchadh, diagnóisic.',
                                 DESCRIPTION4: 'Riarachán córas.',
                                 DESCRIPTION5: 'Óstáil suíomhanna idirlín.',
                                 DESCRIPTION6: 'Ostáil ríomhphoist, scagairí turscair, cosaint ar víris.',
-                                DESCRIPTION7: 'DNS hosting and configuration.',
+                                DESCRIPTION7: 'Óstáil DNS.',
                                 DESCRIPTION8: 'Déanamh caidrimh le go leor custaiméirí trí ghuthán agus ríomhphost; bheith ag freastail ar oifigí, sheomraí freastalaithe agus ionaid sonraí chomh mhaith.'
                             }
                         },

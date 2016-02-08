@@ -1,9 +1,17 @@
+body {
+    background-color: #E8EDF3;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 a {
+    color: #000000;
     text-decoration: none;
 }
 
-#mainContent {
-    font-size: 10px;
+a:hover {
+    color: #E6CF8B;
+    text-decoration: none;
 }
 
 #header {
@@ -18,11 +26,9 @@ a {
 }
 
 .navbar {
-    margin: 20px auto;
-    border: 1px solid blue;
-    width: 70%;
-    clear: both;
+    width: 100%;
     text-align: center;
+    background-color: #22264B;
 }
 
 .navitem {
@@ -32,6 +38,10 @@ a {
     text-align: center;
     display: inline-block;
     margin: 0 auto;
+}
+
+.navitem a {
+    color: #E8EDF3;
 }
 
 #footer {
@@ -44,7 +54,7 @@ a {
     left: 25%;
     display: inline-block;
     border: 1px solid blue;
-    background-color: rgba(255, 255, 255, 255);
+    background-color: rgba(255, 255, 255, 20);
 }
 
 #languageSelector {
@@ -57,7 +67,7 @@ a {
 
 #footer #emailAddress {
     position: absolute;
-    bottom: 0%;
+    top: 5px;
     right: 15%;
     height: 100%;
 }
@@ -85,7 +95,6 @@ a {
     display: inline-block;
     font-size: 12px;
     width: 50%;
-    bottom: 10%;
 }
 
 #firstName {
