@@ -32,6 +32,23 @@
                             ]
                         }
                     ]
+                },
+                {
+                    prefix: 'RBADMIN',
+                    link: 'https://redbrick.dcu.ie',
+                    duties: [
+                        {
+                            id: 'DESCRIPTION1',
+                            technologies: [
+                                'Ubuntu 8.04',
+                                'Solaris 10',
+                                'OpenBSD',
+                                'Hybrid IRCD',
+                                'Apache',
+                                'NNTP'
+                            ]
+                        }
+                    ]
                 }
             ]
 

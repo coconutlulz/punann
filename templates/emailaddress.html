@@ -1,0 +1,5 @@
+<div id="emailAddress" ng-controller="EmailAddressController as eaCtrl">
+    <span class="emailChar" ng-repeat="char in eaCtrl.getChars() track by $index">
+        {{ char }}
+    </span>
+</div>

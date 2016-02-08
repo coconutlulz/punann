@@ -15,7 +15,7 @@
                                 },
                                 {
                                     names: ['JavaScript'],
-                                    subitems: ['AngularJS', 'jQuery']
+                                    subitems: ['AngularJS', 'angular-translate', 'jQuery']
                                 },
                                 {
                                     names: ['HTML5', 'CSS']
@@ -75,14 +75,13 @@
                             ]
                         },
                         {
-                            heading: 'SECTION3',
-                            items: [
-                            ]
+                            heading: 'SECTION3'
                         },
                         {
                             heading: 'SECTION4',
                             items: [
                                 {
+                                    names: ['Checkpoint', 'Juniper', 'pf', 'iptables']
                                 }
                             ]
                         }

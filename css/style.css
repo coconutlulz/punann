@@ -1,3 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+#mainContent {
+    font-size: 10px;
+}
+
 #header {
     position: relative;
     width: 100%;
@@ -30,28 +38,54 @@
     position: fixed;
     margin: 0 auto;
     padding: 3px 3px 3px 3px;
-    width: 70%;
+    width: 50%;
     bottom: 0px;
-    height: 3%;
-    left: 15%;
+    height: 15px;
+    left: 25%;
     display: inline-block;
     border: 1px solid blue;
+    background-color: rgba(255, 255, 255, 255);
 }
 
 #languageSelector {
     position: absolute;
-    right: 5%;
-    top: 0px;
+    right: 2%;
+    top: 15%;
     width: 2%;
     text-align: center;
 }
 
+#footer #emailAddress {
+    position: absolute;
+    bottom: 0%;
+    right: 15%;
+    height: 100%;
+}
+
+.emailChar {
+    display: inline-block;
+    font-size: 10px;
+}
+
+#social {
+    position: absolute;
+    right: 6%;
+    top: 20%;
+}
+
+.socialLogo
+{
+    width: 15px;
+}
+
 .name {
     position: relative;
+    height: 100%;
     left: 0%;
     display: inline-block;
     font-size: 12px;
     width: 50%;
+    bottom: 10%;
 }
 
 #firstName {
@@ -96,8 +130,7 @@
     border: 1px dashed #555555;
 }
 
-
-.mainText{
+.mainText {
     display: table;
 }
 
@@ -156,4 +189,18 @@
     display: table-cell;
     width: 40%;
     padding-right: 30px;
+}
+
+#contact td {
+    padding: 3px;
+}
+
+#contact td:nth-of-type(1) {
+    text-align: right;
+}
+
+#pgp {}
+#pgp textarea {
+    font-family: Hack, monospace;
+    font-size: 10px;
 }

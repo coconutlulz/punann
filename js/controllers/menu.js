@@ -17,6 +17,14 @@
                 {
                     id: 'EDUCATION',
                     link: '.education'
+                },
+                {
+                    id: 'CONTACT',
+                    link: '.contact'
+                },
+                {
+                    id: 'BLOG',
+                    link: '.blog'
                 }
             ];
         }])

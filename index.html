@@ -2,26 +2,29 @@
 <html ng-app="punann">
 <head>
     <meta charset="utf-8">
-    <!-- Load angular in head as functionality is dependent on it
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
-    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
     <script src="js/lib/bower-angular-translate-2.9.0/angular-translate.min.js"></script>
+    <script src="js/lib/bower-angular-translate-storage-cookie-2.9.0/angular-translate-storage-cookie.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services/name.js"></script>
     <script src="js/controllers/education.js"></script>
+    <script src="js/controllers/emailaddress.js"></script>
     <script src="js/controllers/experience.js"></script>
     <script src="js/controllers/interests.js"></script>
     <script src="js/controllers/language.js"></script>
     <script src="js/controllers/menu.js"></script>
     <script src="js/controllers/name.js"></script>
     <script src="js/controllers/synopsis.js"></script>
+    <script src="js/directives/emailaddress.js"></script>
     <script src="js/directives/languageselector.js"></script>
     <script src="js/directives/menu.js"></script>
+    <script src="js/directives/pgp.js"></script>
+    <script src="js/directives/social.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -31,7 +34,7 @@
         </div>
     </div>
 
-    <div ui-view>
+    <div id="mainContent" ui-view>
     </div>
 
     <div id="footer">
@@ -40,10 +43,9 @@
             <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
             <div class="fade" ng-if="!nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
         </div>
+        <email-address></email-address>
         <social></social>
-        <div id="languageSelector" ng-controller="LanguageController as langCtrl">
-            <language-selector></language-selector>
-        </div>
+        <language-selector></language-selector>
     </div>
 
 </body>

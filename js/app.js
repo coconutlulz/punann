@@ -1,5 +1,5 @@
 (function() {
-    angular.module('punann', ['ngAnimate', 'ngSanitize', 'ui.router', 'pascalprecht.translate'])
+    angular.module('punann', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ui.router', 'pascalprecht.translate'])
         .config(['$logProvider', '$stateProvider', '$translateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $translateProvider, $urlRouterProvider) {
             var english = {
                 MENU:
@@ -7,15 +7,19 @@
                     SYNOPSIS: 'Synopsis',
                     INTERESTS: 'Interests',
                     EXPERIENCE: 'Experience',
-                    EDUCATION: 'Education'
+                    EDUCATION: 'Education',
+                    CONTACT: 'Contact',
+                    BLOG: 'Blog'
                 },
                 SYNOPSIS:
                 {
-                    P1: 'My name is David and I am a person from Dublin, Ireland. From time to time I have been known as a software engineer. Thanks for taking the time to read my site.',
-                    P2: 'I have worked variously as a network engineer, a system administrator, an intern, a junior developer, a senior developer and a contractor. My industry experience ranges from small companies providing services to local clients; to start-ups; to trans-national giants of the games industry, working on the technology that powers AAA titles; to voluntary contributions to free software projects.',
-                    P3: 'Computers are interesting, if you think about it; they are an interface that gives us the ability to manipulate electrons into doing nearly instantaneous mathematical calculations and processing unimaginable amounts of data. For most of human history, our inventions have focussed on making up for our abilities that couldn\'t perform as well as we needed. The brain is still very much mysterious, but the computer has given us the ability to - for the first time - augment its processing capability in a form of symbiosis. We are bad at maths; computers excel at maths. Computers are bad at heuristics; we excel at heuristics.',
-                    P4: 'That is interesting, isn\'t it?',
-                    P5: 'I am <a href="contact">available for various forms of work</a> - full-stack development and system administration - at very competitive rates.',
+                    WHY: 'Why me?',
+                    P1: 'My name is David and I reside in Dublin, Ireland, working independently as a software engineering contractor.',
+                    P2: 'I have a proven record as a network engineer, a system administrator, an intern, a junior developer, a senior developer and a contractor. My industry experience ranges from small companies providing services to local clients; to start-ups; to trans-national giants of the games industry, working on the technology that powers AAA titles; to voluntary contributions to free software projects.',
+                    P3: 'I am completely honest about all aspects of my professional life. My goal is to please you with my work, not with unrealistic expectations.',
+                    P4: 'I will always use a proven technology if it means increased speed, reliability or security. I pride myself on a strictly evidenced-based, rational philosophy, which means that I will work around limitations instead of letting them slow me down.',
+                    P5: 'My communication skills are excellent and I provide clear, concise explanations of problems and proposed solutions. My documentation - which I supply as standard with all work - is thorough and easy to read: jargon is always explained and buzz-words are always excluded.',
+                    P6: 'Fees and time are flexible. I keep an eye on market rates and make every effort to put myself ahead of the competition.',
                     SKILLS:
                     {
                         HEADING: 'Skills',
@@ -184,6 +188,17 @@
                             {
                                 DESCRIPTION1: '<a href="https://github.com/clementine-player">Clementine music player</a>'
                             }
+                        },
+                        RBADMIN:
+                        {
+                            ORGANISATION: 'RedBrick - Dublin City University Networking Society',
+                            TITLE: 'System Administrator (Committee Member)',
+                            DATERANGE: 'September 2009 to February 2010',
+                            DUTIES:
+                            {
+                                DESCRIPTION1: 'Maintenance of the society\'s systems, including IRC, web hosting, e-mail, storage and image gallery.',
+                                DESCRIPTION2: 'Attendance at committee meetings and running of the society\'s daily affairs.'
+                            }
                         }
                     }
                 },
@@ -235,6 +250,10 @@
                             NOTES: ''
                         }
                     }
+                },
+                CONTACT:
+                {
+                    EMAIL: 'E-mail'
                 }
             };
 
@@ -244,15 +263,19 @@
                     SYNOPSIS: 'Achoimre',
                     INTERESTS: 'Suimeanna agus Caitheamh Aimsire',
                     EXPERIENCE: 'Taithí',
-                    EDUCATION: 'Oideachas'
+                    EDUCATION: 'Oideachas',
+                    CONTACT: 'Teagmháil',
+                    BLOG: 'Blag'
                 },
                 SYNOPSIS:
                 {
-                    P1: 'Is mise David agus is as Áth Cliath dom.',
-                    P2: 'Bhí mé i m\'innealtóir líonra, mo riarthóir córas, m\'intéirneach, m\'fhorbróir sóisearach, m\'ard-fhorbróir agus m\'oibrí ar conradh agam. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
-                    P3: 'Tá ríomhairí suimiúil, má smaoinítear orthu; tá siad mar droichead eadrainn agus idir an domhan fo-adamhach, chun é a ionramháil le fadhbanna mhóra a réiteach agus chun sonraí ollmhóra a phróiseáil. Ar feadh an chuid is mó dár stair, chruthaíomar aireagáin chun ár gcumas a fheabhsú. Tá an inchinn fós rúndiamhair, ach buíochas le ríomhairí, is féidir linn a hachmainn táirgthe a chuidiú. Táimid go dona ag an matamaitic; tá ríomhairí ar feabhas aici. Tá siad go huafásach ag heorastaic; déantar ár n-inchinn dóibh.',
-                    P4: 'Suimiúil, nach bhfuil?',
-                    P5: 'Táim <a href="/contact">le hobair éagsúil</a> - forbairt lán-chruacha agus riarachán córas - ag táillí iomaíocha.',
+                    WHY: 'Cén fáth gur mise an t-innealtóir a roghnófá?',
+                    P1: 'Is mise David agus is as Áth Cliath dom, ag obair mar innealtóir bogearraí neamhspleách.',
+                    P2: 'Tá sé cruthaithe agam go bhfuil ag éirí liom mar innealtóir líonra, riarthóir córas, intéirneach, fhorbróir sóisearach, ard-fhorbróir agus oibrí ar conradh. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
+                    P3: 'Táim macánta go hiomlán um m\'obair . Is é mo chuspóir é go raibh tú sásta le mo chuid oibre, gan torthaí níos measa ná mar a cheap tú a bheadh.',
+                    P4: 'Bíonn teicneolaíocht chruthaithe i bhfeidhm agam le haghaidh luais, iontaofachta nó slándála níos mó. Táim bródúil as fealsúnacht bhunaithe ar fhianaise le hobair thart ar fhadhbanna.',
+                    P5: 'Tá cumais cumarsáide iontacha agam. Cuirim míniúcháin sholéire  ar fail de réitigh molta. Is iomlána mo cháipéisí teichneolaíochta ar fáil go bunúsach atá in éineacht le gach cuid oibre a bhíonn déanta agam. Míním téarma teicneolaíochta agus fágtar focail reatha as.',
+                    P6: 'Tá mo thaillí agus m\'am solúbtha. Breathnaím ar thaillí margaidh chun an ceann is fearr a fháil ar an iomaíocht.',
                     SKILLS:
                     {
                         HEADING: 'Cumas Teicniúla',
@@ -321,7 +344,7 @@
                     LANGUAGES:
                     {
                         HEADING: 'Teangacha',
-                        TEXT: 'Ar feadh an chuid is mó de mo shaol, bhí teanga amháin agam. Ansin, bhí dhá agam. Anois, déanaim iarracht as mo thriú ceann. Tá suim agam sna teangacha Gaelacha agus Lochlainnise agus sa shanasaíocht freisin. Tá ceangal eatarthu agus idir mó shuim san eolaíocht ríomhaireachta agus sa theangeolaíocht ríomhaireachta. Táim ar fáil ar <a href="https://www.duolingo.com/coconutlulz">Duolingo</a> and <a href="http://www.memrise.com/user/coconutlulz/">Memrise</a>.'
+                        TEXT: 'Ar feadh an chuid is mó de mo shaol, bhí teanga amháin agam. Ansin, bhí dhá agam. Anois, déanaim iarracht as mo thriú ceann. Tá suim agam sna teangacha Gaelacha agus Lochlainnise agus sa shanasaíocht freisin. Tá ceangal eatarthu agus idir mó shuim san eolaíocht ríomhaireachta agus sa theangeolaíocht ríomhaireachta. Táim ar fáil ar <a href="https://www.duolingo.com/coconutlulz">Duolingo</a> agus <a href="http://www.memrise.com/user/coconutlulz/">Memrise</a>.'
                     },
                     CYCLING:
                     {
@@ -336,7 +359,7 @@
                         HEADING: 'Gairmiúil',
                         AL:
                         {
-                            TITLE: 'Innealtóir Bogearraí (Lán-Chruach) agus Riarathóir Córais',
+                            TITLE: 'Innealtóir Bogearraí (Lán-Chruacha) agus Riarthóir Córais',
                             DATERANGE: 'Deireadh Fómhair 2015 go láithreach',
                             DUTIES:
                             {
@@ -345,23 +368,23 @@
                         },
                         TAILIFY:
                         {
-                            TITLE: 'Ard-Innealtóir Bogearraí (Cúl) agus Riarathóir Córais',
+                            TITLE: 'Ard-Innealtóir Bogearraí (Cúil) agus Riarthóir Córais',
                             DATERANGE: 'Deireadh Fómhair 2014 go Deireadh Fómhair 2015',
                             DUTIES: 
                             {
-                                DESCRIPTION1: 'Software architect and senior developer for all of Tailify\'s back-end services and social media interfaces, including test suites.',
-                                DESCRIPTION2: 'Database design, administration and back-ups.',
+                                DESCRIPTION1: 'Ailtire bogearraí agus ardfhorbróir do gach seirbhís cúil agus comhéadán na meáin shóisialta ag Tailify - scrúduithe san áireamh.',
+                                DESCRIPTION2: 'Dearadh, riarachán agus déanamh chóipeanna chúltaca de bhunachar sonraí.',
                                 DESCRIPTION3: 'Design and maintenance of fault-tolerant, scalable infrastructure that is capable of handling massive volumes of data.',
                                 DESCRIPTION4: 'RESTful and non-RESTful API development; remote task management.',
                                 DESCRIPTION5: 'Maintenance of internal services.',
                                 DESCRIPTION6: 'Internal security policy and enforcement.',
-                                DESCRIPTION7: 'Thorough documentation.'
+                                DESCRIPTION7: 'Cáipéisí iomlána.'
                             }
                         },
                         DW:
                         {
-                            TITLE: 'Junior Software Engineer',
-                            DATERANGE: 'September 2012 to September 2014',
+                            TITLE: 'Innealtóir Bogearraí Sóisearach',
+                            DATERANGE: 'Meán Fómhair 2012 go Meán Fómhair 2014',
                             DUTIES: 
                             {
                                 DESCRIPTION1: 'Development and maintenance of online services, including: lobby services, match-making, cheat detection, data storage etc.',
@@ -381,21 +404,21 @@
                                 DESCRIPTION2: 'Formulation and maintenance of security policies for external clients.',
                                 DESCRIPTION3: 'Monitoring, intrusion detection, auditing, diagnostics.',
                                 DESCRIPTION4: 'Riarachán córas.',
-                                DESCRIPTION5: 'Web hosting.',
-                                DESCRIPTION6: 'E-mail hosting, spam filtering, virus detection.',
+                                DESCRIPTION5: 'Óstáil suíomhanna idirlín.',
+                                DESCRIPTION6: 'Ostáil ríomhphoist, scagairí turscair, cosaint ar víris.',
                                 DESCRIPTION7: 'DNS hosting and configuration.',
-                                DESCRIPTION8: 'Interacting with a high volume of customers; mostly via phone and e-mail, but with on-site visits to offices, server rooms and data centres.'
+                                DESCRIPTION8: 'Déanamh caidrimh le go leor custaiméirí trí ghuthán agus ríomhphost; bheith ag freastail ar oifigí, sheomraí freastalaithe agus ionaid sonraí chomh mhaith.'
                             }
                         },
                         STREAM:
                         {
-                            TITLE: 'Eircom ADSL Technical Support Agent',
-                            DATERANGE: 'April 2008 to May 2008'
+                            TITLE: 'Gníomhaire Thacaíocht Teicneolaíochta ADSL Eircom',
+                            DATERANGE: 'Aibreán 2008 go Bealtaine 2008'
                         },
                         SBS:
                         {
-                            TITLE: 'IT Department Contractor',
-                            DATERANGE: 'July 2005 to September 2005; July 2006'
+                            TITLE: 'Oibrí ar Conradh Roinn Teicneolaíochta',
+                            DATERANGE: 'Iúil 2005 go Meán Fómhair 2005; Iúil 2006'
                         }
                     },
                     VOLUNTARY:
@@ -420,6 +443,17 @@
                             DUTIES:
                             {
                                 DESCRIPTION1: 'Seinnteoir ceoil <a href="https://github.com/clementine-player">Clementine</a>'
+                            }
+                        },
+                        RBADMIN:
+                        {
+                            ORGANISATION: 'RedBrick - Cumann Líonraithe Ollscoil Chathair Bhaile Átha Cliath',
+                            TITLE: 'Riarthóir Córais (Ball Coiste)',
+                            DATERANGE: 'Meán Fómhair 2009 go Feabhra 2010',
+                            DUTIES:
+                            {
+                                DESCRIPTION1: 'Cothabháil córas an chumainn, IRC, óstáil suíomhanna idirlín, ríomhphost, stóras agus dánlann san áireamh.',
+                                DESCRIPTION2: 'Bheith ag freastail ar chruinnithe coiste agus ag rith an choiste.'
                             }
                         }
                     }
@@ -471,6 +505,10 @@
                             NOTES: ''
                         }
                     }
+                },
+                CONTACT:
+                {
+                    EMAIL: 'R-phost'
                 }
             };
 
@@ -479,12 +517,12 @@
                 .translations('ga', irish)
                 .useSanitizeValueStrategy('sanitizeParameters')
                 .usePostCompiling(true)
-                //.determinePreferredLanguage();
-                .preferredLanguage('en');
+                .determinePreferredLanguage()
+                .useCookieStorage();
 
             $logProvider.debugEnabled(true);
 
-            $urlRouterProvider.otherwise('/home');
+            $urlRouterProvider.otherwise('/synopsis');
 
             $stateProvider
                 .state('synopsis', {
@@ -560,6 +598,30 @@
                             controllerAs: 'eduCtrl'
                         }
                     }
+                })
+                .state('contact', {
+                    url: '/contact',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/partial-contact.html'
+                        }
+                    }
+                })
+                .state('blog', {
+                    url: 'http://www.theanalystlounge.com/blog',
+                    external: true
                 });
-        }]);
+        }])
+        // Ensure that external ui-route links open.
+        .run(function($rootScope, $window) {
+            $rootScope.$on('$stateChangeStart',
+            function(event, toState, toParams, fromState, fromParams) {
+                if (toState.external) {
+                    event.preventDefault();
+                    $window.open(toState.url, '_self');
+                }
+            });
+        });
 })();
+
+    
