@@ -272,7 +272,7 @@
                     WHY: 'Cén fáth gur mise an t-innealtóir a roghnófá?',
                     P1: 'Is mise David agus is as Áth Cliath dom, ag obair mar innealtóir bogearraí neamhspleách.',
                     P2: 'Tá sé cruthaithe agam go bhfuil ag éirí liom mar innealtóir líonra, riarthóir córas, intéirneach, fhorbróir sóisearach, ard-fhorbróir agus oibrí ar conradh. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
-                    P3: 'Táim macánta go hiomlán um m\'obair . Is é mo chuspóir é go raibh tú sásta le mo chuid oibre, gan torthaí níos measa ná mar a cheap tú a bheadh.',
+                    P3: 'Táim macánta go hiomlán um m\'obair. Is é mo chuspóir é go raibh tú sásta le mo chuid oibre, gan torthaí níos measa ná mar a cheap tú a bheadh.',
                     P4: 'Bíonn teicneolaíocht chruthaithe i bhfeidhm agam le haghaidh luais, iontaofachta nó slándála níos mó. Táim bródúil as fealsúnacht bhunaithe ar fhianaise le hobair thart ar fhadhbanna.',
                     P5: 'Tá cumais cumarsáide iontacha agam. Cuirim míniúcháin sholéire  ar fail de réitigh molta. Is iomlána mo cháipéisí teichneolaíochta ar fáil go bunúsach atá in éineacht le gach cuid oibre a bhíonn déanta agam. Míním téarma teicneolaíochta agus fágtar focail reatha as.',
                     P6: 'Tá mo thaillí agus m\'am solúbtha. Breathnaím ar thaillí margaidh chun an ceann is fearr a fháil ar an iomaíocht.',
