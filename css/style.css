@@ -83,19 +83,16 @@ h1 {
     padding-right: 1px;
 }
 
+.emailChar {
+    display: inline-block;
+}
 
-
-#subheader #emailAddress {
-    font-size: 5px;
+#subheader #emailAddress .emailChar {
+    font-size: 10px;
 }
 
 #subheader a {
     text-decoration: none;
-}
-
-.emailChar {
-    display: inline-block;
-    font-size: 10px;
 }
 
 .name {
