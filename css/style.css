@@ -151,64 +151,31 @@ h1 {
 }
 
 .mainText {
-    display: table;
+    padding: 0px 15px 15px 15px;
 }
 
-.mainText ul
-{
+.mainText ul {
     list-style-type: none;
 }
 
-#formalEducation {
+.mainList {
+    padding-left: 0px;
+}
+
+.leftSide {
     text-align: left;
     display: table-cell;
     width: 40%;
 }
 
-#informalEducation {
+.rightSide {
     text-align: left;
     display: table-cell;
     width: 40%;
-    padding-right: 30px;
+    padding-left: 10%;
 }
 
-#formalEducation {
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-}
-
-#informalEducation {
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-    padding-right: 30px;
-}
-
-#professionalExperience {
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-}
-
-#voluntaryExperience {
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-    padding-right: 30px;
-}
-
-#synopsisIntro{
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-}
-
-#synopsisSkills{
-    text-align: left;
-    display: table-cell;
-    width: 40%;
-    padding-right: 30px;
+#interestsSection {
 }
 
 #contact td {

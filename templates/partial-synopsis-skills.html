@@ -1,6 +1,8 @@
-<ul>
+<ul class="mainList">
     <li ng-repeat="skill in synCtrl.skills">
-        <h3 class="skillHeading">{{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.HEADING' | translate }}</h3>
+        <h3 class="skillHeading" ng-onclick="synCtrl.toggleShow('SYNOPSIS.SKILLS' + skill.prefiX + '.HEADING')">
+                                 {{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.HEADING' | translate }}
+        </h3>
         <ul class="skillSection" ng-repeat="section in skill.sections">
             <li>
                 <h4>{{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.' + section.heading | translate }}</h4>
