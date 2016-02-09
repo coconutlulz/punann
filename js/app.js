@@ -515,10 +515,14 @@
             $translateProvider
                 .translations('en', english)
                 .translations('ga', irish)
-                .useSanitizeValueStrategy('sanitizeParameters')
-                .usePostCompiling(true)
+                .registerAvailableLanguageKeys(['en', 'ga'], {
+                    'en_*': 'en',
+                    'ga_IE': 'ga'
+                })
+                .useCookieStorage()
                 .determinePreferredLanguage()
-                .useCookieStorage();
+                .fallbackLanguage('en_*')
+                .useSanitizeValueStrategy('sanitizeParameters');
 
             $logProvider.debugEnabled(true);
 
