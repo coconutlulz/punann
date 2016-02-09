@@ -35,10 +35,7 @@
         </div>
     </div>
 
-    <div id="mainContent" ui-view>
-    </div>
-
-    <div id="footer">
+    <div id="subheader">
         <div class="name" ng-controller="NameController as nameCtrl">
             <div id="firstName">{{ nameCtrl.firstName }}</div>
             <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
@@ -49,5 +46,9 @@
         <language-selector></language-selector>
     </div>
 
-</body>
+
+    <div id="mainContent" ui-view>
+    </div>
+
+    </body>
 </html>
