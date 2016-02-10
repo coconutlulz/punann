@@ -297,20 +297,20 @@
                         },
                         LANGUAGES:
                         {
-                            HEADING: 'Languages',
+                            HEADING: 'Teangacha',
                             ENGLISH:
                             {
-                                HEADING: 'English',
+                                HEADING: 'Béarla',
                                 LEVEL: 'C2 - Dúchasach'
                             },
                             IRISH:
                             {   
-                                HEADING: 'Irish',
+                                HEADING: 'Gaeilge',
                                 LEVEL: 'B2 - Ard-idirmheánach'
                             },
                             FINNISH:
                             {
-                                HEADING: 'Finnish',
+                                HEADING: 'Fionnlainnis',
                                 LEVEL: 'A1 - Tosaitheoir'
                             }
                         }
