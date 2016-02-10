@@ -94,16 +94,34 @@
                             heading: 'TECHWRITING'
                         }
                     ]
-                }
-            ];
-
-            controller.abilities = [
+                },
                 {
                     prefix: 'LANGUAGES',
-                    languages: [
-                        'ENGLISH',
-                        'IRISH',
-                        'FINNISH'
+                    sections: [
+                        {
+                            heading: 'ENGLISH.HEADING',
+                            items: [
+                                {
+                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.ENGLISH.LEVEL']
+                                }
+                            ]
+                        },
+                        {
+                            heading: 'IRISH.HEADING',
+                            items: [
+                                {
+                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.IRISH.LEVEL']
+                                }
+                            ]
+                        },
+                        {
+                            heading: 'FINNISH.HEADING',
+                            items: [
+                                {
+                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.FINNISH.LEVEL']
+                                }
+                            ]
+                        }
                     ]
                 }
             ];

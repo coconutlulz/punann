@@ -172,7 +172,10 @@ h1 {
     padding-left: 10%;
 }
 
-#interestsSection {
+.skillHeading {
+    display: table-cell;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 #contact td {

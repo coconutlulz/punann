@@ -42,27 +42,23 @@
                         {
                             HEADING: 'Related',
                             TECHWRITING: 'Technical Writing'
-                        }
-                    },
-                    ABILITIES:
-                    {
-                        HEADING: 'Abilities',
+                        },
                         LANGUAGES:
                         {
                             HEADING: 'Languages',
                             ENGLISH:
                             {
-                                NAME: 'English',
+                                HEADING: 'English',
                                 LEVEL: 'C2 - Native'
                             },
                             IRISH:
                             {   
-                                NAME: 'Irish',
+                                HEADING: 'Irish',
                                 LEVEL: 'B2 - Upper intermediate'
                             },
                             FINNISH:
                             {
-                                NAME: 'Finnish',
+                                HEADING: 'Finnish',
                                 LEVEL: 'A1 - Beginner'
                             }
                         }
@@ -298,30 +294,27 @@
                         {
                             HEADING: 'Ceangailte',
                             TECHWRITING: 'Scríbhneoireacht Teicniúil'
-                        }
-                    },
-                    ABILITIES:
-                    {
-                        HEADING: 'Cumas Eile',
+                        },
                         LANGUAGES:
                         {
-                            HEADING: 'Teangacha',
+                            HEADING: 'Languages',
                             ENGLISH:
                             {
-                                NAME: 'Béarla',
+                                HEADING: 'English',
                                 LEVEL: 'C2 - Dúchasach'
                             },
                             IRISH:
                             {   
-                                NAME: 'Gaeilge',
+                                HEADING: 'Irish',
                                 LEVEL: 'B2 - Ard-idirmheánach'
                             },
                             FINNISH:
                             {
-                                NAME: 'Fionnlainnis',
+                                HEADING: 'Finnish',
                                 LEVEL: 'A1 - Tosaitheoir'
                             }
                         }
+
                     }
                 },
                 INTERESTS:
