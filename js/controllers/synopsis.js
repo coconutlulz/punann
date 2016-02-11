@@ -38,11 +38,16 @@
                             heading: 'SECTION1',
                             items: [
                                 {
-                                    names: ['GNU/Linux', 'BSD'],
-                                    subitems: ['Debian', 'Ubuntu', 'CentOS', 'Red Hat', 'Fedora', 'Arch Linux', 'OpenBSD', 'FreeBSD']
+                                    names: ['GNU/Linux'],
+                                    subitems: ['Debian', 'Ubuntu', 'CentOS', 'Red Hat', 'Fedora', 'Arch Linux']
                                 },
                                 {
-                                    names: ['Windows Server']
+                                    names: ['Unix'],
+                                    subitems: ['FreeBSD', 'OpenBSD', 'Solaris']
+                                },
+                                {
+                                    names: ['Windows Server'],
+                                    subitems: ['2003', '2008']
                                 }
                             ]
                         },
@@ -55,7 +60,7 @@
                                 },
                                 {
                                     names: ['HTTPD'],
-                                    subitems: ['Apache', 'nginx']
+                                    subitems: ['Apache', 'nginx', 'lighttpd']
                                 },
                                 {
                                     names: ['SQL'],
@@ -120,13 +125,9 @@
             ];
 
             this.isSelected = function(skill) {
-                console.log(skill);
-                console.log(menuService.selectedSkill);
                 return skill == menuService.selectedSkill;
             };
             this.toggleShow = function(skill) {
-                menuService.selectedSkill = skill;
-                console.log(skill);
                 console.log(menuService.selectedSkill);
             };
         }])
