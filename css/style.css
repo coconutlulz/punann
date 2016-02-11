@@ -62,18 +62,24 @@ h1 {
 
 #languageSelector {
     position: absolute;
-    left: 95%;
-    bottom: 7%;
+    left: 94%;
+    bottom: 0%;
     text-align: center;
-    border-radius: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
     border: 1px solid;
-    padding: 3px;
+    border-bottom: 0px;
+    border-radius: 5px;
 }
 
 #social {
     position: absolute;
-    right: 6%;
+    right: 10%;
     bottom: 0%;
+    padding: 3px 3px 0px 3px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-radius: 5px;
 }
 
 .socialLogo
@@ -83,6 +89,12 @@ h1 {
     padding-right: 1px;
     -webkit-filter:invert(75%);
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0.75');
+}
+
+#localSolo
+{
+    -webkit-filter:invert(0%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
 .emailChar {
