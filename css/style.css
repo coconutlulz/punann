@@ -81,6 +81,8 @@ h1 {
     width: 20px;
     padding-left: 1px;
     padding-right: 1px;
+    -webkit-filter:invert(75%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0.75');
 }
 
 .emailChar {
@@ -201,4 +203,10 @@ h1 {
 #pgp textarea {
     font-family: Hack, monospace;
     font-size: 10px;
+}
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
