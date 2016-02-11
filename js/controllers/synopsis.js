@@ -128,7 +128,7 @@
                 return skill == menuService.selectedSkill;
             };
             this.toggleShow = function(skill) {
-                console.log(menuService.selectedSkill);
+                menuService.selectedSkill = skill;
             };
         }])
 })();
