@@ -1,10 +1,9 @@
 (function() {
     angular.module('punann')
-        .controller('SynopsisController', ['$translate', function($translate) {
-            var controller = this;
-            controller.skills = [
+        .controller('SynopsisController', ['$translate', 'menuService', function($translate, menuService) {
+            this.skills = [
                 {
-                    prefix: 'DEV',
+                    prefix: menuService.skillHeadings[0],
                     sections: [
                         {
                             heading: 'SECTION1',
@@ -14,17 +13,11 @@
                                     subitems: ['SQLAlchemy', 'Alembic', 'Django', 'Pyramid', 'celery', 'flower']
                                 },
                                 {
-                                    names: ['JavaScript'],
+                                    names: ['JavaScript', 'HTML5', 'CSS'],
                                     subitems: ['AngularJS', 'angular-translate', 'jQuery']
                                 },
                                 {
-                                    names: ['HTML5', 'CSS']
-                                },
-                                {
-                                    names: ['C']
-                                },
-                                {
-                                    names: ['C++'],
+                                    names: ['C', 'C++'],
                                     subitems: ['Qt', 'Allegro']
                                 },
                                 {
@@ -39,7 +32,7 @@
                     ]
                 },
                 {
-                    prefix: 'OPS',
+                    prefix: menuService.skillHeadings[1],
                     sections: [
                         {
                             heading: 'SECTION1',
@@ -88,7 +81,7 @@
                     ]
                 },
                 {
-                    prefix: 'OTHER',
+                    prefix: menuService.skillHeadings[2],
                     sections: [
                         {
                             heading: 'TECHWRITING'
@@ -96,13 +89,13 @@
                     ]
                 },
                 {
-                    prefix: 'LANGUAGES',
+                    prefix: menuService.skillHeadings[3],
                     sections: [
                         {
                             heading: 'ENGLISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.ENGLISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.ENGLISH.LEVEL']
                                 }
                             ]
                         },
@@ -110,7 +103,7 @@
                             heading: 'IRISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.IRISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.IRISH.LEVEL']
                                 }
                             ]
                         },
@@ -118,12 +111,23 @@
                             heading: 'FINNISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.LANGUAGES.FINNISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.FINNISH.LEVEL']
                                 }
                             ]
                         }
                     ]
                 }
             ];
+
+            this.isSelected = function(skill) {
+                console.log(skill);
+                console.log(menuService.selectedSkill);
+                return skill == menuService.selectedSkill;
+            };
+            this.toggleShow = function(skill) {
+                menuService.selectedSkill = skill;
+                console.log(skill);
+                console.log(menuService.selectedSkill);
+            };
         }])
 })();

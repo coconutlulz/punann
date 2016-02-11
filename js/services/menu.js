@@ -1,6 +1,6 @@
 (function() {
     angular.module('punann')
-       .controller('MenuController', ['$translate', 'menuService', function($translate, menuService) {
+        .service('menuService', function() {
             this.menu = [
                 {
                     id: 'SYNOPSIS',
@@ -27,5 +27,15 @@
                     link: '.blog'
                 }
             ];
-        }])
-})();
+
+            this.skillHeadings = [
+                'DEV',
+                'OPS',
+                'OTHER',
+                'LANGUAGES'
+            ];
+
+            this.selectedSkill = null;
+        })
+    }
+)();

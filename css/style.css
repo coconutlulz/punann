@@ -186,6 +186,17 @@ h1 {
     text-align: right;
 }
 
+.skillItems {
+    display: table-cell;
+}
+
+.skillItem {
+    display: inline;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(62,92,95,10);
+}
+
 #pgp {}
 #pgp textarea {
     font-family: Hack, monospace;
