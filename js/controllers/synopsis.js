@@ -64,12 +64,16 @@
                                 },
                                 {
                                     names: ['SQL'],
-                                    subitems: ['MySQL Community Edition', 'Percona XtraDB Cluster']
+                                    subitems: ['MySQL Community Edition', 'Percona XtraDB Cluster', 'ORM']
                                 },
                                 {
                                     names: ['NoSQL'],
                                     subitems: ['Redis']
                                 },
+                                {
+                                    names: ['SYNOPSIS.SKILLS.OPS.SECTION2OTHER'],
+                                    subitems: ['RabbitMQ']
+                                }
                             ]
                         },
                         {

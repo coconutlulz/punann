@@ -35,8 +35,10 @@
                             SUB: 'System Administration and Network Engineering',
                             SECTION1: 'Operating Systems',
                             SECTION2: 'Services',
+                            SECTION2OTHER: 'Other',
                             SECTION3: 'Networking',
                             SECTION4: 'Security'
+
                         },
                         OTHER:
                         {
@@ -292,6 +294,7 @@
                             SUB: 'Riarachán Córas agus Innealtóireacht Líonra',
                             SECTION1: 'Córais Oibriúchán',
                             SECTION2: 'Seirbhísí',
+                            SECTION2OTHER: 'Eile',
                             SECTION3: 'Líonrú',
                             SECTION4: 'Slándáil'
                         },
