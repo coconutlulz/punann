@@ -105,7 +105,8 @@
                                 'Celery',
                                 'Django',
                                 'djcelery',
-                                'flower'
+                                'flower',
+                                'RabbitMQ'
                             ]
                         },
                         {
