@@ -14,7 +14,7 @@
                 SYNOPSIS:
                 {
                     WHY: 'Why me?',
-                    P1: 'Software developement and system administration contracting from Dublin, Ireland.',
+                    P1: 'Software development and system administration contracting from Dublin, Ireland.',
                     P2: 'Great work, competitive rates.',
                     P3: 'I am completely honest about all aspects of my professional life. My goal is to please you with my work, not with unrealistic expectations.',
                     P4: 'I will always use a proven technology if it means increased speed, reliability or security. I pride myself on a strictly evidenced-based, rational philosophy, which means that I will work around limitations instead of letting them slow me down.',

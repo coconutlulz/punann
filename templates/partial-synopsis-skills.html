@@ -1,12 +1,10 @@
-<div class="skillHeadings" ng-repeat="skill in synCtrl.skills">
-    <div class="skillHeading" ng-style="{'background-color': synCtrl.extractBGColour(skill),'color': synCtrl.extractFGColor(skill)}">
-        <a href=""><h3 ng-click="synCtrl.toggleShow(skill.prefix)">
-            {{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.HEADING' | translate }}
-        </h3></a>
-    </div>
+<div class="skillHeading" ng-repeat="skill in synCtrl.skills" ng-style="{'background-color': synCtrl.extractBGColour(skill),'color': synCtrl.extractFGColor(skill)}">
+    <a href="">
+        <h3 ng-click="synCtrl.toggleShow(skill.prefix)">{{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.HEADING' | translate }}</h3>
+    </a>
 </div>
 <div class="skills" ng-repeat="skill in synCtrl.skills" ng-style="{'background-color': synCtrl.extractBGColour(skill),'color': synCtrl.extractFGColour(skill)}">
-    <ul class="skillSection" ng-repeat="section in skill.sections" ng-show="synCtrl.isSelected(skill.prefix)">
+    <ul ng-repeat="section in skill.sections" ng-show="synCtrl.isSelected(skill.prefix)">
         <li>
             <h4>{{ 'SYNOPSIS.SKILLS.' + skill.prefix + '.' + section.heading | translate }}</h4>
             <ul class="skillItems" ng-repeat="item in section.items">

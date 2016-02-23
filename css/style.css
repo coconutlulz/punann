@@ -7,6 +7,8 @@ body {
     color: rgba(0,0,0,100);
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 a {
@@ -22,18 +24,21 @@ h1 {
 }
 
 #header {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    height: 20%;
+    position: static;
+    top: 0px;
+    float: left;
+    min-width: 100%;
 }
 
 #lowerHeader {
     position: relative;
-    height: 70px;
+    top: 50px;
+    height: 30px;
+    width: 100%;
 }
 
 .navbar {
+    top: 0px;
     width: 100%;
     text-align: center;
     background-color: rgba(0,0,0,100);
@@ -56,8 +61,8 @@ h1 {
 
 #languageSelector {
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 6%;
+    top: 20%;
     text-align: center;
     padding-left: 3px;
     padding-right: 3px;
@@ -87,7 +92,7 @@ h1 {
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
-#header #emailAddress {
+#lowerHeader #emailAddress {
     position: absolute;
     left: 10%;
     bottom: 0%;
@@ -97,18 +102,18 @@ h1 {
     display: inline-block;
 }
 
-#header #emailAddress .emailChar {
+#lowerHeader #emailAddress .emailChar {
     font-size: 10px;
 }
 
-#header a {
+#lowerHeader a {
     text-decoration: none;
 }
 
 .name {
     position: absolute;
     left: 10%;
-    bottom: 20%;
+    bottom: 40%;
     display: inline-block;
     font-size: 12px;
     width: 15%;
@@ -152,12 +157,14 @@ h1 {
 .mainContent {
     position: relative;
     width: 80%;
-    height: 70vh;
+    height: 600px;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 15px 15px 15px 15px;
     border-radius: 25px;
     color: rgba(255,255,255,100);
     background-color: rgba(80,80,80,100);
+    overflow: hidden;
 }
 
 .mainContent div {
@@ -185,34 +192,33 @@ h1 {
     padding-left: 10%;
 }
 
-.skillHeadings {
-    padding: 0 3px 0 3px;
-    border-radius: 3px;
-}
-
 .skillHeading {
-    position: relative;
     width: 100%;
-    padding: 0;
-    height: 50px;
-    margin: 0 auto;
-    font-size: 30px;
 }
 
-.skillHeadings:nth-of-type(1) a {
+.skillHeading a {
+    text-decoration: none;
+}
+
+.skillHeading h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.skillHeading:nth-of-type(1) a {
     color: rgba(255,255,255,100);
 }
-.skillHeadings:nth-of-type(2) a {
+.skillHeading:nth-of-type(2) a {
     color: rgba(12,33,59,100);
-    position: relative;
     top: 0%;
-    text-align: center;
 }
-.skillHeadings:nth-of-type(3) a {
+.skillHeading:nth-of-type(3) a {
     color: rgba(0,0,0,100);
-    position: relative;
     top: 0%;
-    text-align: right;
+}
+
+.skills {
+    width: 100%;
 }
 
 .skillSection {
@@ -235,6 +241,10 @@ h1 {
 .skillItem {
     display: inline;
     padding: 3px;
+}
+
+.skillSubItem {
+    width: 100%;
 }
 
 #pgp {}
