@@ -3,6 +3,23 @@
         .controller('SynopsisController', ['$translate', 'menuService', function($translate, menuService) {
             this.skills = [
                 {
+                    colour:
+                    {
+                        fg:
+                        {
+                            red: 255,
+                            green: 255,
+                            blue: 255,
+                            alpha: 100
+                        },
+                        bg:
+                        {
+                            red: 12,
+                            green: 33,
+                            blue: 59,
+                            alpha: 100
+                        }
+                    },
                     prefix: menuService.skillHeadings[0],
                     sections: [
                         {
@@ -33,6 +50,23 @@
                 },
                 {
                     prefix: menuService.skillHeadings[1],
+                    colour:
+                    {
+                        fg:
+                        {
+                            red: 12,
+                            green: 33,
+                            blue: 59,
+                            alpha: 100
+                        },
+                        bg:
+                        {
+                            red: 200,
+                            green: 200,
+                            blue: 200,
+                            alpha: 100
+                        }
+                    },
                     sections: [
                         {
                             heading: 'SECTION1',
@@ -91,20 +125,29 @@
                 },
                 {
                     prefix: menuService.skillHeadings[2],
-                    sections: [
+                    colour:
+                    {
+                        fg:
                         {
-                            heading: 'TECHWRITING'
+                            red: 0,
+                            green: 0,
+                            blue: 0,
+                            alpha: 100
+                        },
+                        bg:
+                        {
+                            red: 255,
+                            green: 255,
+                            blue: 255,
+                            alpha: 100
                         }
-                    ]
-                },
-                {
-                    prefix: menuService.skillHeadings[3],
+                    },
                     sections: [
                         {
                             heading: 'ENGLISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.ENGLISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[2] + '.ENGLISH.LEVEL']
                                 }
                             ]
                         },
@@ -112,7 +155,7 @@
                             heading: 'IRISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.IRISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[2] + '.IRISH.LEVEL']
                                 }
                             ]
                         },
@@ -120,7 +163,7 @@
                             heading: 'FINNISH.HEADING',
                             items: [
                                 {
-                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[3] + '.FINNISH.LEVEL']
+                                    names: ['SYNOPSIS.SKILLS.' + menuService.skillHeadings[2] + '.FINNISH.LEVEL']
                                 }
                             ]
                         }
@@ -128,11 +171,36 @@
                 }
             ];
 
+            var controller = this;
             this.isSelected = function(skill) {
                 return skill == menuService.selectedSkill;
             };
+
             this.toggleShow = function(skill) {
-                menuService.selectedSkill = skill;
+                if(controller.isSelected(skill)) {
+                    menuService.selectedSkill = null;
+                }
+                else {
+                    menuService.selectedSkill = skill;
+                }
+            };
+
+            this.extractBGColour = function(skill) {
+                var result = 'rgba(' + 
+                        skill.colour.bg.red + ',' +
+                        skill.colour.bg.green + ',' +
+                        skill.colour.bg.blue + ',' +
+                        skill.colour.bg.alpha + ')';
+                return result;
+            };
+
+            this.extractFGColour = function(skill) {
+                var result = 'rgba(' + 
+                        skill.colour.fg.red + ',' +
+                        skill.colour.fg.green + ',' +
+                        skill.colour.fg.blue + ',' +
+                        skill.colour.fg.alpha + ')';
+                return result;
             };
         }])
 })();

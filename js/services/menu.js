@@ -31,7 +31,6 @@
             this.skillHeadings = [
                 'DEV',
                 'OPS',
-                'OTHER',
                 'LANGUAGES'
             ];
 

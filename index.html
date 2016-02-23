@@ -33,22 +33,19 @@
     <div id="header">
         <div id="lowerHeader" ng-controller="MenuController as menuCtrl">
             <top-menu items="menuCtrl.getItems()"></top-menu>
+            <div class="name" ng-controller="NameController as nameCtrl">
+                <div id="firstName">{{ nameCtrl.firstName }}</div>
+                <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
+                <div class="fade" ng-if="!nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
+            </div>
+            <email-address></email-address>
+            <social></social>
+            <language-selector></language-selector>
         </div>
     </div>
-
-    <div id="subheader">
-        <div class="name" ng-controller="NameController as nameCtrl">
-            <div id="firstName">{{ nameCtrl.firstName }}</div>
-            <div class="fade" ng-if="nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
-            <div class="fade" ng-if="!nameCtrl.getFade()">{{ nameCtrl.getCurrentSurname() }}</div>
-        </div>
-        <email-address></email-address>
-        <social></social>
-        <language-selector></language-selector>
-    </div>
-
-
-    <div id="mainContent" ui-view>
+   
+    <div main-content class="mainContent" ng-controller="MenuController as menuCtrl">
+        <div class="slide" ui-view></div>
     </div>
 
     <div id="footer">

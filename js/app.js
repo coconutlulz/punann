@@ -14,8 +14,8 @@
                 SYNOPSIS:
                 {
                     WHY: 'Why me?',
-                    P1: 'My name is David and I reside in Dublin, Ireland, working independently as a software engineering contractor.',
-                    P2: 'I have a proven record as a network engineer, a system administrator, an intern, a junior developer, a senior developer and a contractor. My industry experience ranges from small companies providing services to local clients; to start-ups; to trans-national giants of the games industry, working on the technology that powers AAA titles; to voluntary contributions to free software projects.',
+                    P1: 'Software developement and system administration contracting from Dublin, Ireland.',
+                    P2: 'Great work, competitive rates.',
                     P3: 'I am completely honest about all aspects of my professional life. My goal is to please you with my work, not with unrealistic expectations.',
                     P4: 'I will always use a proven technology if it means increased speed, reliability or security. I pride myself on a strictly evidenced-based, rational philosophy, which means that I will work around limitations instead of letting them slow me down.',
                     P5: 'My communication skills are excellent and I provide clear, concise explanations of problems and proposed solutions. My documentation - which I supply as standard with all work - is thorough and easy to read: jargon is always explained and buzz-words are always excluded.',
@@ -39,11 +39,6 @@
                             SECTION3: 'Networking',
                             SECTION4: 'Security'
 
-                        },
-                        OTHER:
-                        {
-                            HEADING: 'Related',
-                            TECHWRITING: 'Technical Writing'
                         },
                         LANGUAGES:
                         {
@@ -297,11 +292,6 @@
                             SECTION2OTHER: 'Eile',
                             SECTION3: 'Líonrú',
                             SECTION4: 'Slándáil'
-                        },
-                        OTHER:
-                        {
-                            HEADING: 'Ceangailte',
-                            TECHWRITING: 'Scríbhneoireacht Teicniúil'
                         },
                         LANGUAGES:
                         {

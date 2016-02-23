@@ -1,15 +1,10 @@
-<div class="mainContent">
-    <h1>{{ 'MENU.INTERESTS' | translate }}</h1>
-    <div class="mainText" id="interestsSection">
-        <div class="leftSide">
-            <ul class="mainList">
-                <li ng-repeat="idPair in interestsCtrl.translationIDs">
-                    <h3 class="interestsHeading" translate=" {{ idPair.heading }}">
-                    </h3>
-                    <p class="interestsBody" translate=" {{ idPair.text }}">
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="leftSide">
+    <ul class="mainList">
+        <li ng-repeat="idPair in interestsCtrl.translationIDs">
+            <h3 class="interestsHeading" translate=" {{ idPair.heading }}">
+            </h3>
+            <p class="interestsBody" translate=" {{ idPair.text }}">
+            </p>
+        </li>
+    </ul>
 </div>

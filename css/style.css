@@ -3,14 +3,14 @@ html {
 }
 
 body {
-    background-color: rgba(62,92,95,100);
-    color: rgba(200,200,200,100);
+    background-color: rgba(200,200,200,100);
+    color: rgba(0,0,0,100);
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
 
 a {
-    color: rgba(168,168,168,100);
+    color: rgba(25,117,209,100);
 }
 
 a:hover {
@@ -25,7 +25,7 @@ h1 {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    height: 50px;
+    height: 20%;
 }
 
 #lowerHeader {
@@ -36,6 +36,7 @@ h1 {
 .navbar {
     width: 100%;
     text-align: center;
+    background-color: rgba(0,0,0,100);
 }
 
 .navitem {
@@ -53,22 +54,14 @@ h1 {
     text-decoration: none;
 }
 
-#subheader {
-    position: relative;
-    padding: 5px 5px 5px 5px;
-    width: 80%;
-    left: 10%;
-}
-
 #languageSelector {
     position: absolute;
-    left: 94%;
-    bottom: 0%;
+    right: 0%;
+    top: 0%;
     text-align: center;
     padding-left: 3px;
     padding-right: 3px;
     border: 1px solid;
-    border-bottom: 0px;
     border-radius: 5px;
 }
 
@@ -77,9 +70,6 @@ h1 {
     right: 10%;
     bottom: 0%;
     padding: 3px 3px 0px 3px;
-    border: 1px solid;
-    border-bottom: 0;
-    border-radius: 5px;
 }
 
 .socialLogo
@@ -87,8 +77,8 @@ h1 {
     width: 20px;
     padding-left: 1px;
     padding-right: 1px;
-    -webkit-filter:invert(75%);
-    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0.75');
+    -webkit-filter:invert(0%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
 #localSolo
@@ -97,25 +87,31 @@ h1 {
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
+#header #emailAddress {
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+}
+
 .emailChar {
     display: inline-block;
 }
 
-#subheader #emailAddress .emailChar {
+#header #emailAddress .emailChar {
     font-size: 10px;
 }
 
-#subheader a {
+#header a {
     text-decoration: none;
 }
 
 .name {
-    position: relative;
-    height: 100%;
-    left: 0%;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
     display: inline-block;
     font-size: 12px;
-    width: 50%;
+    width: 15%;
 }
 
 #firstName {
@@ -154,19 +150,22 @@ h1 {
 }
 
 .mainContent {
+    position: relative;
     width: 80%;
+    height: 70vh;
     margin: 0 auto;
     padding: 15px 15px 15px 15px;
     border-radius: 25px;
-    background-color: rgba(0,45,49,100);
+    color: rgba(255,255,255,100);
+    background-color: rgba(80,80,80,100);
 }
 
-.mainText {
-    padding: 1px 15px 15px 15px;
+.mainContent div {
+    top: 0%;
 }
 
-.mainText ul {
-    list-style-type: none;
+.mainContent a {
+    color: rgba(255,255,255,100);
 }
 
 .mainList {
@@ -186,10 +185,39 @@ h1 {
     padding-left: 10%;
 }
 
+.skillHeadings {
+    padding: 0 3px 0 3px;
+    border-radius: 3px;
+}
+
 .skillHeading {
-    display: table-cell;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 50px;
     margin: 0 auto;
-    padding: 5px;
+    font-size: 30px;
+}
+
+.skillHeadings:nth-of-type(1) a {
+    color: rgba(255,255,255,100);
+}
+.skillHeadings:nth-of-type(2) a {
+    color: rgba(12,33,59,100);
+    position: relative;
+    top: 0%;
+    text-align: center;
+}
+.skillHeadings:nth-of-type(3) a {
+    color: rgba(0,0,0,100);
+    position: relative;
+    top: 0%;
+    text-align: right;
+}
+
+.skillSection {
+    padding: 3px;
+    width: 100%;
 }
 
 #contact td {
@@ -206,9 +234,7 @@ h1 {
 
 .skillItem {
     display: inline;
-    border-radius: 10px;
     padding: 3px;
-    background-color: rgba(62,92,95,10);
 }
 
 #pgp {}
@@ -221,4 +247,37 @@ h1 {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+.slide {
+    position: absolute;
+    left: 0%;
+    width: 97%;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    opacity: 1;
+}
+.slide ul {
+    list-style-type: none;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slide.ng-enter {
+    left: 100%;
+    opacity: 0;
+}
+.slide.ng-enter-active {
+    left: 0;
+    opacity: 1;
+}
+.slide.ng-leave {
+    left: 0;
+    opacity: 1;
+}
+.slide.ng-leave-active {
+    left: -100%;
+    opacity: 0;
 }
