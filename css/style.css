@@ -197,6 +197,7 @@ h1 {
 
 .skillHeading {
     width: 100%;
+    padding-left: 10px;
 }
 
 .skillHeading a {
