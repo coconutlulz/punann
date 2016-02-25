@@ -93,8 +93,8 @@
                                     subitems: ['Amazon Web Services (AWS/EC2)', 'Google Compute Engine (GCE)']
                                 },
                                 {
-                                    names: ['HTTPD'],
-                                    subitems: ['Apache', 'nginx', 'lighttpd']
+                                    names: ['WWW'],
+                                    subitems: ['Apache', 'nginx', 'lighttpd', 'WordPress']
                                 },
                                 {
                                     names: ['SQL'],
