@@ -13,13 +13,8 @@
                 },
                 SYNOPSIS:
                 {
-                    WHY: 'Why me?',
                     P1: 'Software development and system administration contracting from Dublin, Ireland.',
                     P2: 'Great work, competitive rates.',
-                    P3: 'I am completely honest about all aspects of my professional life. My goal is to please you with my work, not with unrealistic expectations.',
-                    P4: 'I will always use a proven technology if it means increased speed, reliability or security. I pride myself on a strictly evidenced-based, rational philosophy, which means that I will work around limitations instead of letting them slow me down.',
-                    P5: 'My communication skills are excellent and I provide clear, concise explanations of problems and proposed solutions. My documentation - which I supply as standard with all work - is thorough and easy to read: jargon is always explained and buzz-words are always excluded.',
-                    P6: 'Fees and time are flexible. I keep an eye on market rates and make every effort to put myself ahead of the competition.',
                     SKILLS:
                     {
                         HEADING: 'Skills',
@@ -267,13 +262,8 @@
                 },
                 SYNOPSIS:
                 {
-                    WHY: 'Cén fáth gur mise an t-innealtóir a roghnófá?',
-                    P1: 'Is mise David agus is as Áth Cliath dom, ag obair mar innealtóir bogearraí neamhspleách.',
-                    P2: 'Tá sé cruthaithe agam go bhfuil ag éirí liom mar innealtóir líonra, riarthóir córas, intéirneach, fhorbróir sóisearach, ard-fhorbróir agus oibrí ar conradh. Baineann mo thaithí tionscail le comhlachtaí beaga ag cur seirbhísí do chliaint áitiúla; le gnólachtaí nuathionscanta; le comhlachtaí trasnáisiúnta de thionscal na gcluichí ríomhaireachta, ag obair ar theicneolaíocht a sholáthraíonn chumhacht do chluichí AAA; le síntiúis do shaorearraí.',
-                    P3: 'Táim macánta go hiomlán um m\'obair. Is é mo chuspóir é go raibh tú sásta le mo chuid oibre, gan torthaí níos measa ná mar a cheap tú a bheadh.',
-                    P4: 'Bíonn teicneolaíocht chruthaithe i bhfeidhm agam le haghaidh luais, iontaofachta nó slándála níos mó. Táim bródúil as fealsúnacht bhunaithe ar fhianaise le hobair thart ar fhadhbanna.',
-                    P5: 'Tá cumais cumarsáide iontacha agam. Cuirim míniúcháin sholéire  ar fail de réitigh molta. Is iomlána mo cháipéisí teichneolaíochta ar fáil go bunúsach atá in éineacht le gach cuid oibre a bhíonn déanta agam. Míním téarma teicneolaíochta agus fágtar focail reatha as.',
-                    P6: 'Tá mo thaillí agus m\'am solúbtha. Breathnaím ar thaillí margaidh chun an ceann is fearr a fháil ar an iomaíocht.',
+                    P1: 'Oibrí conartha fhorbairt bogearraí agus riarachán córais as Áth Cliath, Éire.',
+                    P2: 'Obair iontach, táillí iomaíocha.',
                     SKILLS:
                     {
                         HEADING: 'Cumas Teicniúla',
