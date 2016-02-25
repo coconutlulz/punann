@@ -32,9 +32,10 @@ h1 {
 
 #lowerHeader {
     position: relative;
-    top: 50px;
+    top: 20px;
     height: 30px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -116,7 +117,7 @@ h1 {
     bottom: 40%;
     display: inline-block;
     font-size: 12px;
-    width: 15%;
+    width: 100%;
 }
 
 #firstName {
@@ -159,7 +160,7 @@ h1 {
     width: 80%;
     height: 600px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 15px 15px 15px 15px;
     border-radius: 25px;
     color: rgba(255,255,255,100);
@@ -262,9 +263,9 @@ h1 {
 .slide {
     position: absolute;
     left: 0%;
-    width: 97%;
+    width: 94%;
     height: 100%;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 25px 15px 25px;
     opacity: 1;
 }
 .slide ul {
