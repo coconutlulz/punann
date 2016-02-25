@@ -83,11 +83,10 @@ h1 {
 
 .socialLogo
 {
+    height: 20px;
     width: 20px;
     padding-left: 1px;
     padding-right: 1px;
-    -webkit-filter:invert(0%);
-    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
 #lowerHeader #emailAddress {
