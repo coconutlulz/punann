@@ -246,7 +246,7 @@
                 FOOTER:
                 {
                     LICENCE: 'The <a href="https://github.com/coconutlulz/punann">source code for this site</a> is freely available under the GNU General Public License, version 3.',
-                    LOGOATTRIBUTION: 'Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>'
+                    LOGOATTRIBUTION: 'Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> and by <a href="https://thenounproject.com/vikynandha/">Vignesh Nandha Kumar</a> from <a href="https://thenounproject.com">The Noun Project</a> are licensed under the <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>'
                 }
             };
 
@@ -494,7 +494,7 @@
                 FOOTER:
                 {
                     LICENCE: 'Tá <a href="https://github.com/coconutlulz/punann">cód foinseach an tsuímh seo</a> ar fáil go saor faoin gCeadúnas Ginearálta Poiblí GNU, leagan 3.',
-                    LOGOATTRIBUTION: 'Deilbhíní atá déanta le <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> as <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> atá faoin gceadúnas <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>'
+                    LOGOATTRIBUTION: 'Deilbhíní atá déanta le <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> as <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> agus le <a href="https://thenounproject.com/vikynandha/">Vignesh Nandha Kumar</a> as <a href="https://thenounproject.com">The Noun Project</a> atá faoin gceadúnas <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>'
                 }
             };
 
