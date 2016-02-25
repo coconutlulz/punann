@@ -239,9 +239,11 @@ h1 {
 
 .skillItems {
     display: table-cell;
+    word-wrap: break-word;
 }
 
 .skillItem {
+    text-decoration: underline;
     display: inline;
     padding: 3px;
 }
@@ -273,6 +275,7 @@ h1 {
     opacity: 1;
 }
 .slide ul {
+    padding-left: 10px;
     list-style-type: none;
 }
 .slide.ng-enter,
