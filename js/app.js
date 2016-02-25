@@ -287,7 +287,7 @@
                         {
                             HEADING: 'Feidhmiú',
                             SUB: 'Riarachán Córas agus Innealtóireacht Líonra',
-                            SECTION1: 'Córais Oibriúchán',
+                            SECTION1: 'Córais Oibriúcháin',
                             SECTION2: 'Seirbhísí',
                             SECTION2OTHER: 'Eile',
                             SECTION3: 'Líonrú',
