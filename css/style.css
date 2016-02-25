@@ -90,12 +90,6 @@ h1 {
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
 }
 
-#localSolo
-{
-    -webkit-filter:invert(0%);
-    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='0');
-}
-
 #lowerHeader #emailAddress {
     position: absolute;
     left: 10%;
