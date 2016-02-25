@@ -32,6 +32,7 @@
 <body>
     <div id="header" ng-controller="MenuController as menuCtrl">
             <top-menu items="menuCtrl.getItems()"></top-menu>
+            <language-selector></language-selector>
     </div>
     <div id="lowerHeader">
         <div class="name" ng-controller="NameController as nameCtrl">
@@ -41,10 +42,9 @@
         </div>
         <email-address></email-address>
         <social></social>
-        <language-selector></language-selector>
     </div>
    
-    <div main-content class="mainContent" ng-controller="MenuController as menuCtrl">
+    <div class="mainContent" ng-controller="MenuController as menuCtrl">
         <div class="slide" ui-view></div>
     </div>
 

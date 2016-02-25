@@ -62,13 +62,16 @@ h1 {
 
 #languageSelector {
     position: absolute;
-    right: 6%;
-    top: 20%;
+    right: 0%;
     text-align: center;
     padding-left: 3px;
     padding-right: 3px;
     border: 1px solid;
     border-radius: 5px;
+}
+
+#languageSelector a {
+    text-decoration: none;
 }
 
 #social {
