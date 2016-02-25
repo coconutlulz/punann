@@ -161,7 +161,6 @@ h1 {
 .mainContent {
     position: relative;
     width: 80%;
-    height: 600px;
     margin: 0 auto;
     margin-top: 20px;
     padding: 15px 15px 15px 15px;
@@ -264,11 +263,12 @@ h1 {
 }
 
 .slide {
-    position: absolute;
+    position: relative;
+    float: left;
     left: 0%;
     width: 94%;
     height: 100%;
-    padding: 15px 25px 15px 25px;
+    padding: 0px 15px 15px;
     opacity: 1;
 }
 .slide ul {
@@ -288,10 +288,14 @@ h1 {
     opacity: 1;
 }
 .slide.ng-leave {
+    position: absolute;
+    top: 10px;
     left: 0;
     opacity: 1;
 }
 .slide.ng-leave-active {
+    position: absolute;
+    top: -500px;
     left: -100%;
     opacity: 0;
 }
