@@ -173,6 +173,7 @@ h1 {
 
 .mainList {
     padding-left: 0px;
+    width: 100%;
 }
 
 .leftSide {
@@ -186,6 +187,14 @@ h1 {
     display: table-cell;
     width: 40%;
     padding-left: 10%;
+}
+
+.expHeader {
+    width: 100%;
+}
+
+.expHeader a {
+    text-decoration: none;
 }
 
 .skillHeading {
@@ -246,7 +255,6 @@ h1 {
     width: 100%;
 }
 
-#pgp {}
 #pgp textarea {
     font-family: Hack, monospace;
     font-size: 10px;
@@ -268,31 +276,62 @@ h1 {
     padding: 0px 15px 15px;
     opacity: 1;
 }
+
 .slide ul {
     padding-left: 10px;
     list-style-type: none;
 }
+
 .slide.ng-enter,
 .slide.ng-leave {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
+
 .slide.ng-enter {
     left: 100%;
     opacity: 0;
 }
+
 .slide.ng-enter-active {
     left: 0;
     opacity: 1;
 }
+
 .slide.ng-leave {
     position: absolute;
     left: 0;
     opacity: 1;
 }
+
 .slide.ng-leave-active {
     position: absolute;
     top: -500px;
     left: -100%;
+    opacity: 0;
+}
+
+.transformable.ng-enter,
+.transformable.ng-leave {
+    -webkit-transition: height 100ms linear;
+    -moz-transition: height 100ms linear;
+    -o-transition: height 100ms linear;
+    -ms-transition: height 100ms linear;
+    transition: height 100ms linear;
+}
+
+.transformable.ng-enter {
+    opacity: 0;
+}
+
+.transformable.ng-enter-active {
+    opacity: 1;
+}
+
+.transformable.ng-leave {
+    opacity: 1;
+}
+
+.transformable.ng-leave-active {
     opacity: 0;
 }

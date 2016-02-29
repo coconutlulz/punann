@@ -290,5 +290,17 @@
                     link: 'http://www.siemens.com',
                 }
             ];
+
+            this.selected = null;
+
+            var controller = this;
+            this.toggleShow = function(position) {
+                if (controller.selected == position) {
+                    controller.selected = null;
+                }
+                else {
+                    controller.selected = position;
+                }
+            };
         }])
 })();
