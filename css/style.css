@@ -189,12 +189,37 @@ h1 {
     padding-left: 10%;
 }
 
+.expItem {
+    padding-bottom: 15px;
+}
+
 .expHeader {
     width: 100%;
 }
 
+.expHeader * {
+    display: inline;
+}
+
 .expHeader a {
     text-decoration: none;
+}
+
+.expOrganisation {
+    display: inline;
+}
+
+.expOrganisation a {
+    text-decoration: none;
+}
+
+.expandIcon {
+    height: 10px;
+    width: 10px;
+}
+
+.expandIconDiv {
+    padding-right: 10px;
 }
 
 .skillHeading {

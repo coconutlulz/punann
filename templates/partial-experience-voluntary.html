@@ -1,19 +1,27 @@
 <div class="mainList" ng-repeat="position in expCtrl.voluntary">
-    <div class="expHeader" ng-click="expCtrl.toggleShow(position)">
-        <a href=""><h3 class="expTitle">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.TITLE' | translate }}</h3></a>
-    </div>
-    <p class="expOrganisation"><a href="{{ position.link }}">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.ORGANISATION' | translate }}</a></p>
-    <div ng-show="expCtrl.selected == position">
-        <p class="expDateRange">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DATERANGE' | translate }}</p>
-        <ul class="expDuties" ng-repeat="duty in position.duties">
-            <li class="expDutiesDuty">
-                <span class="expDutyDescription" translate>{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DUTIES.' + duty.id }}</span>
-                <ul class="expDutyTechnologies" ng-repeat="technology in duty.technologies">
-                    <li class="expDutyTechnology">
-                        {{ technology }}
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <div class="expItem">
+        <div class="expHeader" ng-click="expCtrl.toggleShow(position)">
+            <a href="">
+                <div class="expandIconDiv">
+                    <img class="expandIcon" src="img/svg/noun_338407_cc.svg" ng-show="expCtrl.selected == position">
+                    <img class="expandIcon" src="img/svg/noun_338410_cc.svg" ng-show="expCtrl.selected != position">
+                </div>
+                <h3 class="expTitle">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.TITLE' | translate }}</h3>
+            </a>
+        </div>
+        <p class="expOrganisation"><a href="{{ position.link }}">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.ORGANISATION' | translate }}</a></p>
+        <div ng-show="expCtrl.selected == position">
+            <p class="expDateRange">{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DATERANGE' | translate }}</p>
+            <ul class="expDuties" ng-repeat="duty in position.duties">
+                <li class="expDutiesDuty">
+                    <span class="expDutyDescription" translate>{{ 'EXPERIENCE.VOLUNTARY.' + position.prefix + '.DUTIES.' + duty.id }}</span>
+                    <ul class="expDutyTechnologies" ng-repeat="technology in duty.technologies">
+                        <li class="expDutyTechnology">
+                            {{ technology }}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
