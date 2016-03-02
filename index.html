@@ -31,8 +31,8 @@
 </head>
 <body>
     <div id="header" ng-controller="MenuController as menuCtrl">
-            <top-menu items="menuCtrl.getItems()"></top-menu>
-            <language-selector></language-selector>
+        <top-menu items="menuCtrl.getItems()"></top-menu>
+        <language-selector></language-selector>
     </div>
     <div id="lowerHeader">
         <div class="name" ng-controller="NameController as nameCtrl">
@@ -44,7 +44,7 @@
         <social></social>
     </div>
    
-    <div class="mainContent transformable" ng-controller="MenuController as menuCtrl">
+    <div class="mainContent" ng-controller="MenuController as menuCtrl">
         <div class="slide" ui-view></div>
     </div>
 

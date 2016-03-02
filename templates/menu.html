@@ -1,5 +1,5 @@
-<nav class="navbar">
-    <div class="navitem" ng-repeat="item in items">
+<nav class="navbar" ng-controller="MenuController as menuCtrl">
+    <div class="navitem" ng-repeat="item in items" ng-class="{ 'navselected': menuCtrl.checkSelected(item.link) }">
         <a ui-sref="{{ item.link }}">
             {{ 'MENU.' + item.id | translate }}
         </a>
